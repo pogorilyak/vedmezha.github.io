@@ -1,0 +1,86 @@
+// Style for project content
+@import "../utilities/color";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    align-self: center;
+    padding: 0;
+    //margin: 0;
+  }
+
+  .btn {
+    width: 150px;
+    border: 1px solid $btn-blue;
+    border-radius: 10px;
+    font-weight: 300;
+    background: transparent;
+    align-self: center;
+
+    &:hover {
+      text-shadow: 1.5px;
+      @extend .blue;
+    }
+  }
+
+ .popup {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 50px;
+   width: 500px;
+   height: 500px;
+   align-self: center;
+   border: 1px solid $base-border;
+
+   .custom-sign {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     width: 100%;
+
+     .submit-button {
+       width: 88px;
+       border: 1px solid $btn-red;
+       border-radius: 17px;
+       font-size: 16px;
+       background: transparent;
+       align-self: center;
+       margin-top: 50px;
+
+       &:hover {
+         @extend .red;
+       }
+
+     }
+
+     input {
+       margin: 20px;
+     }
+   }
+
+   span {
+     display: block;
+     width: 100px;
+     margin: auto;
+     
+     &.facebook {
+       background-color: $btn-blue;
+       
+     }
+     &.google {
+       background-color: $btn-red;
+     }
+   }
+
+   h3 {
+     align-self: center;
+     margin: 0 auto;
+   }
+ }
+}
+
+
