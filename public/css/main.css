@@ -24,18 +24,18 @@ button.close {
   vertical-align: middle;
   transition: all 350ms ease-in-out 0s;
   user-select: none; }
-  .btn.red, .wrapper .popup .custom-sign .btn.submit-button:hover {
+  .btn.red {
     color: #ffffff;
     border-color: #f44336;
     background-color: #f44336; }
-    .btn.red:hover, .wrapper .popup .custom-sign .btn.submit-button:hover {
+    .btn.red:hover {
       border-color: #f77066;
       background-color: #f77066; }
-  .btn.blue, .wrapper .btn:hover {
+  .btn.blue {
     color: #ffffff;
     border-color: #0088cc;
     background-color: #0088cc; }
-    .btn.blue:hover, .wrapper .btn:hover {
+    .btn.blue:hover {
       border-color: #00aaff;
       background-color: #00aaff; }
   .btn.green {
@@ -54,15 +54,15 @@ button.close {
       background-color: #ffad33; }
   .btn.bordered {
     background-color: transparent; }
-    .btn.bordered.red, .wrapper .popup .custom-sign .btn.bordered.submit-button:hover {
+    .btn.bordered.red {
       color: #f44336; }
-      .btn.bordered.red:hover, .wrapper .popup .custom-sign .btn.bordered.submit-button:hover {
+      .btn.bordered.red:hover {
         color: #ffffff;
         border-color: #f44336;
         background-color: #f44336; }
-    .btn.bordered.blue, .wrapper .btn.bordered:hover {
+    .btn.bordered.blue {
       color: #0088cc; }
-      .btn.bordered.blue:hover, .wrapper .btn.bordered:hover {
+      .btn.bordered.blue:hover {
         color: #ffffff;
         border-color: #0088cc;
         background-color: #0088cc; }
@@ -1091,163 +1091,123 @@ textarea:focus:-ms-input-placeholder {
   .xl-offset-0 {
     margin-left: 0; } }
 
-html {
-  position: relative;
-  min-height: 100%; }
-  html body {
-    min-height: 1px;
-    height: 100%;
-    margin-bottom: 60px; }
-  @media (min-width: 544px) {
-    html body {
-      margin-bottom: 60px; } }
-  @media (min-width: 768px) {
-    html body {
-      margin-bottom: 60px; } }
-  @media (min-width: 992px) {
-    html body {
-      margin-bottom: 60px; } }
-  @media (min-width: 1200px) {
-    html body {
-      margin-bottom: 60px; } }
-
-.wrapper {
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #13143c;
+  margin: 4rem auto;
   width: 100%; }
 
-button.close {
-  padding: 0;
-  cursor: pointer;
-  background: none;
-  border: 0; }
+.cards_block {
+  margin: 5rem 0; }
 
-.btn {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  padding: 8px 16px;
-  background-color: transparent;
-  border: none;
-    border-width: 1px;
-    border-style: solid;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none 0;
-  vertical-align: middle;
-  transition: all 350ms ease-in-out 0s;
-  user-select: none; }
-  .btn.red, .wrapper .popup .custom-sign .btn.submit-button:hover {
-    color: #ffffff;
-    border-color: #f44336;
-    background-color: #f44336; }
-    .btn.red:hover, .wrapper .popup .custom-sign .btn.submit-button:hover {
-      border-color: #f77066;
-      background-color: #f77066; }
-  .btn.blue, .wrapper .btn:hover {
-    color: #ffffff;
-    border-color: #0088cc;
-    background-color: #0088cc; }
-    .btn.blue:hover, .wrapper .btn:hover {
-      border-color: #00aaff;
-      background-color: #00aaff; }
-  .btn.green {
-    color: #ffffff;
-    border-color: #4caf50;
-    background-color: #4caf50; }
-    .btn.green:hover {
-      border-color: #6ec071;
-      background-color: #6ec071; }
-  .btn.orange {
-    color: #ffffff;
-    border-color: #ff9800;
-    background-color: #ff9800; }
-    .btn.orange:hover {
-      border-color: #ffad33;
-      background-color: #ffad33; }
-  .btn.bordered {
-    background-color: transparent; }
-    .btn.bordered.red, .wrapper .popup .custom-sign .btn.bordered.submit-button:hover {
-      color: #f44336; }
-      .btn.bordered.red:hover, .wrapper .popup .custom-sign .btn.bordered.submit-button:hover {
-        color: #ffffff;
-        border-color: #f44336;
-        background-color: #f44336; }
-    .btn.bordered.blue, .wrapper .btn.bordered:hover {
-      color: #0088cc; }
-      .btn.bordered.blue:hover, .wrapper .btn.bordered:hover {
-        color: #ffffff;
-        border-color: #0088cc;
-        background-color: #0088cc; }
-    .btn.bordered.green {
-      color: #4caf50; }
-      .btn.bordered.green:hover {
-        color: #ffffff;
-        border-color: #4caf50;
-        background-color: #4caf50; }
-    .btn.bordered.orange {
-      color: #ff9800; }
-      .btn.bordered.orange:hover {
-        color: #ffffff;
-        border-color: #ff9800;
-        background-color: #ff9800; }
-  .btn.rounded {
-    border-radius: 5px; }
-
-.wrapper {
+.flex-wrapper {
   display: flex;
   justify-content: center;
-  flex-direction: column; }
-  .wrapper h1 {
-    align-self: center;
-    padding: 0; }
-  .wrapper .btn {
-    width: 150px;
-    border: 1px solid #0088cc;
-    border-radius: 10px;
-    font-weight: 300;
-    background: transparent;
-    align-self: center; }
-    .wrapper .btn:hover {
-      text-shadow: 1.5px; }
-  .wrapper .popup {
+  padding: 0 15rem; }
+
+.card {
+  margin: .3rem 1.5rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05); }
+  .card-image {
+    border-top: 8px solid #13143c;
+    width: 100%; }
+  .card .like {
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+  .card .event_caption {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .7rem;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #b3b3b3; }
+  .card .caption, .card .date {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center; }
+  .card .date {
+    font-size: .9rem;
+    padding-top: .5rem; }
+  .card .btn_transparent {
+    display: block;
+    padding: .5rem 2rem;
+    margin: 1rem auto;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out; }
+    .card .btn_transparent:hover {
+      background-color: #13143c;
+      color: #fff; }
+
+.info_safety {
+  background-image: url("http://eskipaper.com/images/large-2.jpg"); }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #13143c;
+  color: #fff; }
+
+.foo-contacts {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  padding: 1rem;
+  border-right: 1px solid #fff;
+  width: 32%; }
+  .foo-contacts .mount {
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    line-height: 90px;
+    height: 70px;
+    width: 70px;
+    background-color: #fff; }
+  .foo-contacts .aligner {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 20px; }
+
+.foo-links {
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+  width: 32%;
+  padding: 1rem; }
+  .foo-links .footer_link-wrap {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 50px;
-    width: 500px;
-    height: 500px;
-    align-self: center;
-    border: 1px solid #bdbdbd; }
-    .wrapper .popup .custom-sign {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      width: 100%; }
-      .wrapper .popup .custom-sign .submit-button {
-        width: 88px;
-        border: 1px solid #f44336;
-        border-radius: 17px;
-        font-size: 16px;
-        background: transparent;
-        align-self: center;
-        margin-top: 50px; }
-      .wrapper .popup .custom-sign input {
-        margin: 20px; }
-    .wrapper .popup span {
-      display: block;
-      width: 100px;
-      margin: auto; }
-      .wrapper .popup span.facebook {
-        background-color: #0088cc; }
-      .wrapper .popup span.google {
-        background-color: #f44336; }
-    .wrapper .popup h3 {
-      align-self: center;
-      margin: 0 auto; }
+    flex-direction: column;
+    align-content: center;
+    width: 32%;
+    margin: 5px; }
+  .foo-links .foo_link {
+    display: block;
+    text-align: center;
+    padding: .3rem; }
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  border-right: 1px solid #fff;
+  height: 120px;
+  width: 32%; }
+
+.credits {
+  text-align: center;
+  padding-top: .5rem; }
+  .credits:last-child {
+    width: 100%; }
 
 .hide {
   display: none !important; }

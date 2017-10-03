@@ -17,16 +17,18 @@
   @import "layouts/grid";
 
 // General
-  @import "general/general";
    //@import "general/forms"; // uncomment if needed to use(not default template)
    //@import "general/button"; // uncomment if needed to use(not default template)
    //@import "general/popup"; // uncomment if needed to use(not default template)
-  // @import "general/table"; // uncomment if needed to use(not default template)
+   // @import "general/table"; // uncomment if needed to use(not default template)
 
 // Modules
-//  @import "modules/header";
-  @import "modules/content";
-  //@import "modules/footer";
+  // @import "modules/header";
+  @import "modules/events-cards";
+  @import "modules/safety_info";
+  @import "modules/footer";
+  @import "modules/cards";
+  
 
 // State
   @import "state/state";
