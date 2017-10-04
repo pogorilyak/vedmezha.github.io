@@ -1086,7 +1086,7 @@ textarea:focus:-ms-input-placeholder {
     margin-left: 0; } }
 
 .counts .flex-wrapper {
-  padding: 0;
+  padding: 0 10rem;
   justify-content: space-around;
   margin-bottom: 15rem; }
 
@@ -1116,7 +1116,7 @@ textarea:focus:-ms-input-placeholder {
 .counts .btn, .counts .card .btn_transparent, .card .counts .btn_transparent {
   display: block;
   margin: 1rem auto;
-  padding: .5rem 2rem;
+  padding: .7rem 2rem;
   font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -1134,22 +1134,18 @@ textarea:focus:-ms-input-placeholder {
   font-size: 4rem;
   font-weight: 700;
   color: #13143c;
-  margin: 4rem auto;
+  margin: 4rem auto 9rem auto;
   width: 100%; }
 
 .cards_block {
   margin: 5rem 0; }
-
-.flex-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 0 15rem; }
-  .flex-wrapper .col {
-    padding: 0; }
+  .cards_block .col {
+    padding: 0;
+    margin: 0 4rem; }
 
 .card {
-  margin: .3rem 1.3rem;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  max-width: 500px; }
   .card-image {
     border-top: 8px solid #13143c;
     width: 100%; }
@@ -1192,35 +1188,33 @@ textarea:focus:-ms-input-placeholder {
 
 .info_safety {
   background-image: url("http://eskipaper.com/images/large-2.jpg"); }
-  .info_safety .flex-wrapper {
-    padding: 0;
-    justify-content: space-around;
-    margin-bottom: 15rem; }
-  .info_safety .circle {
+  .info_safety .col {
+    padding: 0; }
+  .info_safety .row {
+    margin-bottom: 13rem; }
+  .info_safety .info_item {
     display: block;
     position: relative;
-    width: 140px;
+    width: 25%;
     height: 140px;
     line-height: 140px;
-    text-align: center;
-    border: 1px solid #fff;
-    border-radius: 50%; }
-    .info_safety .circle:after {
-      content: " ";
-      display: inline-block;
-      height: 2px;
-      width: 80%;
-      top: 70px;
-      left: 100%;
+    text-align: center; }
+    .info_safety .info_item .circle {
+      display: block;
       position: absolute;
-      background-color: #fff; }
-    .info_safety .circle .caption, .info_safety .circle .card .date, .card .info_safety .circle .date {
+      top: 0;
+      left: 0;
+      width: 140px;
+      height: 140px;
+      border: 1px solid #fff;
+      border-radius: 50%; }
+    .info_safety .info_item .caption, .info_safety .info_item .card .date, .card .info_safety .info_item .date {
       display: block;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 2rem;
       color: #fff; }
-      .info_safety .circle .caption-inner {
+      .info_safety .info_item .caption-inner {
         display: block;
         line-height: 1;
         padding: 1rem 0;

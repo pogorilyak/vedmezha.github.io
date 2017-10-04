@@ -1,32 +1,32 @@
 .info_safety {
     background-image: url("http://eskipaper.com/images/large-2.jpg");
 
-    .flex-wrapper {
+    .col {
         padding: 0;
-        justify-content: space-around;
-        margin-bottom: 15rem;
-
+        // margin: 0 4rem;
     }
 
-    .circle {
+    .row {
+        margin-bottom: 13rem;
+    }
+
+    .info_item {
         display: block;
         position: relative;
-        width: 140px;
+        width: 25%;
         height: 140px;
         line-height: 140px;
         text-align: center;
-        border: 1px solid #fff;
-        border-radius: 50%;
 
-        &:after {
-            content: " ";
-            display: inline-block;
-            height: 2px;
-            width: 80%;
-            top: 70px;
-            left: 100%;
+        .circle {
+            display: block;
             position: absolute;
-            background-color: #fff;
+            top: 0;
+            left: 0;
+            width: 140px;
+            height: 140px;
+            border: 1px solid #fff;
+            border-radius: 50%;
 
         }
 
@@ -47,3 +47,16 @@
         }
     }
 }
+
+
+// &:after {
+//     content: " ";
+//     display: inline-block;
+//     height: 2px;
+//     width: 80%;
+//     top: 70px;
+//     left: 100%;
+//     position: absolute;
+//     background-color: #fff;
+
+// }
