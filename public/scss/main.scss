@@ -26,7 +26,12 @@
 // Modules
   @import "modules/header";
   @import "modules/content";
-  //@import "modules/footer";
+  @import "modules/numbers-circle-block";
+  @import "modules/events-cards";
+  @import "modules/safety_info";
+  @import "modules/footer";
+  @import "modules/cards";
+
 
 // State
   @import "state/state";

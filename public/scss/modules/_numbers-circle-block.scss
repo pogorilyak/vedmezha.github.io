@@ -1,0 +1,56 @@
+.counts {
+    
+    .flex-wrapper {
+        padding: 0;
+        justify-content: space-around;
+        margin-bottom: 15rem;
+
+    }
+
+    .circle {
+        display: block;
+        position: relative;
+        width: 140px;
+        height: 140px;
+        line-height: 140px;
+        text-align: center;
+        border: 1px solid #000;
+        border-radius: 50%;
+
+    }    
+
+    .caption {
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #000;
+
+        &-inner {
+            display: block;
+            line-height: 1;
+            padding: 1rem 0;
+            font-size: 1rem;
+            color: #000;
+        }
+    }
+
+    .btn {
+        display: block;
+        margin: 1rem auto;
+        padding: .7rem 2rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 7px;
+        background-color: #13143c;
+        transition: all .5s ease-in-out;
+        color: #fff;
+
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+    
+    }
+}

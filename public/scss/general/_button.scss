@@ -7,14 +7,14 @@ $btn-orange : color('state','orange');
 // ----------------------
 
 // Buttons style
-button {
-  &.close { // popup close button
-    padding: 0;
-    cursor: pointer;
-    background: none;
-    border: 0;
-  }
-}
+// button {
+//   &.close { // popup close button
+//     padding: 0;
+//     cursor: pointer;
+//     background: none;
+//     border: 0;
+//   }
+// }
 
 .btn {  // general styles for all buttons(<a>, <button>)
   position: relative;

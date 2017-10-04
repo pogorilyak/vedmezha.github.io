@@ -1,0 +1,49 @@
+.info_safety {
+    background-image: url("http://eskipaper.com/images/large-2.jpg");
+
+    .flex-wrapper {
+        padding: 0;
+        justify-content: space-around;
+        margin-bottom: 15rem;
+
+    }
+
+    .circle {
+        display: block;
+        position: relative;
+        width: 140px;
+        height: 140px;
+        line-height: 140px;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 50%;
+
+        &:after {
+            content: " ";
+            display: inline-block;
+            height: 2px;
+            width: 80%;
+            top: 70px;
+            left: 100%;
+            position: absolute;
+            background-color: #fff;
+
+        }
+
+        .caption {
+            display: block;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 2rem;
+            color: #fff;
+
+            &-inner {
+                display: block;
+                line-height: 1;
+                padding: 1rem 0;
+                font-size: 1rem;
+                color: #fff;
+            }
+        }
+    }
+}
