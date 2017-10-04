@@ -1,10 +1,4 @@
-button.close {
-  padding: 0;
-  cursor: pointer;
-  background: none;
-  border: 0; }
-
-.btn {
+.btn, .card .btn_transparent {
   position: relative;
   display: inline-block;
   margin: 0;
@@ -24,61 +18,61 @@ button.close {
   vertical-align: middle;
   transition: all 350ms ease-in-out 0s;
   user-select: none; }
-  .btn.red {
+  .btn.red, .card .red.btn_transparent {
     color: #ffffff;
     border-color: #f44336;
     background-color: #f44336; }
-    .btn.red:hover {
+    .btn.red:hover, .card .red.btn_transparent:hover {
       border-color: #f77066;
       background-color: #f77066; }
-  .btn.blue {
+  .btn.blue, .card .blue.btn_transparent {
     color: #ffffff;
     border-color: #0088cc;
     background-color: #0088cc; }
-    .btn.blue:hover {
+    .btn.blue:hover, .card .blue.btn_transparent:hover {
       border-color: #00aaff;
       background-color: #00aaff; }
-  .btn.green {
+  .btn.green, .card .green.btn_transparent {
     color: #ffffff;
     border-color: #4caf50;
     background-color: #4caf50; }
-    .btn.green:hover {
+    .btn.green:hover, .card .green.btn_transparent:hover {
       border-color: #6ec071;
       background-color: #6ec071; }
-  .btn.orange {
+  .btn.orange, .card .orange.btn_transparent {
     color: #ffffff;
     border-color: #ff9800;
     background-color: #ff9800; }
-    .btn.orange:hover {
+    .btn.orange:hover, .card .orange.btn_transparent:hover {
       border-color: #ffad33;
       background-color: #ffad33; }
-  .btn.bordered {
+  .btn.bordered, .card .bordered.btn_transparent {
     background-color: transparent; }
-    .btn.bordered.red {
+    .btn.bordered.red, .card .bordered.red.btn_transparent {
       color: #f44336; }
-      .btn.bordered.red:hover {
+      .btn.bordered.red:hover, .card .bordered.red.btn_transparent:hover {
         color: #ffffff;
         border-color: #f44336;
         background-color: #f44336; }
-    .btn.bordered.blue {
+    .btn.bordered.blue, .card .bordered.blue.btn_transparent {
       color: #0088cc; }
-      .btn.bordered.blue:hover {
+      .btn.bordered.blue:hover, .card .bordered.blue.btn_transparent:hover {
         color: #ffffff;
         border-color: #0088cc;
         background-color: #0088cc; }
-    .btn.bordered.green {
+    .btn.bordered.green, .card .bordered.green.btn_transparent {
       color: #4caf50; }
-      .btn.bordered.green:hover {
+      .btn.bordered.green:hover, .card .bordered.green.btn_transparent:hover {
         color: #ffffff;
         border-color: #4caf50;
         background-color: #4caf50; }
-    .btn.bordered.orange {
+    .btn.bordered.orange, .card .bordered.orange.btn_transparent {
       color: #ff9800; }
-      .btn.bordered.orange:hover {
+      .btn.bordered.orange:hover, .card .bordered.orange.btn_transparent:hover {
         color: #ffffff;
         border-color: #ff9800;
         background-color: #ff9800; }
-  .btn.rounded {
+  .btn.rounded, .card .rounded.btn_transparent {
     border-radius: 5px; }
 
 .container, .container-full {
@@ -1091,6 +1085,49 @@ textarea:focus:-ms-input-placeholder {
   .xl-offset-0 {
     margin-left: 0; } }
 
+.counts .flex-wrapper {
+  padding: 0;
+  justify-content: space-around;
+  margin-bottom: 15rem; }
+
+.counts .circle {
+  display: block;
+  position: relative;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 50%; }
+
+.counts .caption, .counts .card .date, .card .counts .date {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000; }
+  .counts .caption-inner {
+    display: block;
+    line-height: 1;
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: #000; }
+
+.counts .btn, .counts .card .btn_transparent, .card .counts .btn_transparent {
+  display: block;
+  margin: 1rem auto;
+  padding: .5rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 7px;
+  background-color: #13143c;
+  transition: all .5s ease-in-out;
+  color: #fff; }
+  .counts .btn:hover, .counts .card .btn_transparent:hover, .card .counts .btn_transparent:hover {
+    background-color: #fff;
+    color: #000; }
+
 .title {
   text-align: center;
   text-transform: uppercase;
@@ -1107,9 +1144,11 @@ textarea:focus:-ms-input-placeholder {
   display: flex;
   justify-content: center;
   padding: 0 15rem; }
+  .flex-wrapper .col {
+    padding: 0; }
 
 .card {
-  margin: .3rem 1.5rem;
+  margin: .3rem 1.3rem;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05); }
   .card-image {
     border-top: 8px solid #13143c;
@@ -1128,28 +1167,65 @@ textarea:focus:-ms-input-placeholder {
     color: #b3b3b3; }
   .card .caption, .card .date {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center; }
   .card .date {
     font-size: .9rem;
     padding-top: .5rem; }
-  .card .btn_transparent {
+  .card .btn, .card .btn_transparent {
     display: block;
-    padding: .5rem 2rem;
     margin: 1rem auto;
-    border: 1px solid #000;
-    border-radius: 25px;
-    background-color: transparent;
+    padding: .5rem 2rem;
     font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #13143c;
     transition: all .5s ease-in-out; }
-    .card .btn_transparent:hover {
-      background-color: #13143c;
-      color: #fff; }
+    .card .btn_transparent {
+      border: 1px solid #000;
+      border-radius: 25px;
+      background-color: transparent; }
+      .card .btn_transparent:hover {
+        background-color: #13143c;
+        color: #fff; }
 
 .info_safety {
   background-image: url("http://eskipaper.com/images/large-2.jpg"); }
+  .info_safety .flex-wrapper {
+    padding: 0;
+    justify-content: space-around;
+    margin-bottom: 15rem; }
+  .info_safety .circle {
+    display: block;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%; }
+    .info_safety .circle:after {
+      content: " ";
+      display: inline-block;
+      height: 2px;
+      width: 80%;
+      top: 70px;
+      left: 100%;
+      position: absolute;
+      background-color: #fff; }
+    .info_safety .circle .caption, .info_safety .circle .card .date, .card .info_safety .circle .date {
+      display: block;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2rem;
+      color: #fff; }
+      .info_safety .circle .caption-inner {
+        display: block;
+        line-height: 1;
+        padding: 1rem 0;
+        font-size: 1rem;
+        color: #fff; }
 
 footer {
   display: flex;
