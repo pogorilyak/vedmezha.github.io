@@ -1,13 +1,17 @@
 .main_header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   height: 100vh;
   background: {
     size: cover;
     position: left bottom;
   };
+
+  .header_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
 }
 
 .site_header,
@@ -17,13 +21,46 @@
 
 .header_info {
   text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+
+  .header_title {
+    margin: 0;
+    font-size: 3.8rem;
+
+    @media (min-width: $small-screen) {
+      font-size: 4.8rem;
+    }
+
+    @media (min-width: $large-screen) {
+      font-size: 5.8rem;
+    }
+  }
+
+  .header_subtitle {
+    margin: 0;
+    font-size: 2rem;
+
+    @media (min-width: $small-screen) {
+      font-size: 3rem;
+    }
+
+    @media (min-width: $large-screen) {
+      font-size: 4rem;
+    }
+  }
+
+  .btn-read_more {
+    margin-top: 50px;
+  }
 }
 
 .site_header {
   width: 8rem;
   position: absolute;
   top: 3.4rem;
-  left: 3.4rem;
+  left: 0;
   z-index: 50;
   background-color: rgba(0,0,0,.2);
   border-radius: 4px;
@@ -63,15 +100,19 @@
 }
 
 .header_navigator {
+  position: absolute;
+  top: 3.4rem;
+  right: 0;
   display: flex;
+  padding: 0 1rem;
   background-color: #fff;
   border-radius: .4rem;
   box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0,0,0,.2);
 
-  @media (max-width: $large-container ) {
+  @media (max-width: $medium-screen-down) {
     position: fixed;
-    top: 3.4rem;
     right: 3.4rem;
+    z-index: 10;
   }
 
   .navigator_item {
@@ -244,6 +285,7 @@
   transform: translateX(100%);
   transition: transform 300ms ease-in-out;
   box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0,0,0,.2);
+  will-change: transform;
 
   &.is-open {
     transform: none;
@@ -333,6 +375,7 @@
   .search_label {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 }
 
@@ -353,7 +396,7 @@
       flex-direction: column;
       justify-content: center;
       cursor: pointer;
-      padding: 1.5rem;
+      padding: 2rem 1.5rem;
       color: #4e92df;
       text-align: center;
       overflow: hidden;

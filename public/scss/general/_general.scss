@@ -1,3 +1,16 @@
 .menu-open {
   overflow: hidden;
+  padding-right: 15px;
+}
+
+.hide_on_mobile {
+  @media (max-width: $small-screen-down) {
+    display: none !important;
+  }
+}
+
+.show_on_tablet-and_up {
+  @media (min-width: $medium-screen) {
+    display: block !important;
+  }
 }
