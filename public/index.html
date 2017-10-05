@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>vedmezha</title>
-
+    <link rel="stylesheet" href="css/main.css">
+    <title>Vedmezha</title>
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="main-wrapper">
-    <header class="main_header" style="background-image: url('./images/main_header_background.jpg')">
+    <header class="main_header" style="background-image: url('images/main_header_background.jpg')">
         <div class="container header_container">
             <div class="site_header">
                 <div class="header_logo">
@@ -627,69 +627,75 @@
         </div>
     </header>
     <main>
-        <div class="cards_block event_cards container-full">
+        <div class="cards-block container-full">
             <h2 class="title">events</h2>
-            <div class="flex-wrapper row">
-                <div class="card col m-4">
-                    <img src="http://www.holoweb.net/liam/pictures/2007-12-17-pt-petre-trees/img_8173-sunflare-over-snow-covered-beach-500x400.jpg" alt="niceImg.jpg" class="card-image">
-                    <span class=" icon"></span>
-                    <span class="event_caption">cultural</span>
-                    <span class="caption">Great walk on 2 km high <br> Name mountain</span>
-                    <span class="date">11/12/17</span>
-                    <button class="btn_transparent">learn more</button>
+            <div class="row">
+                <div class="card-wrap col m-4">
+                    <div class="card">
+                        <img src="http://www.holoweb.net/liam/pictures/2007-12-17-pt-petre-trees/img_8173-sunflare-over-snow-covered-beach-500x400.jpg" alt="niceImg.jpg" class="card-image">
+                        <span class="like icon"></span>
+                        <span class="event-caption">cultural</span>
+                        <p class="caption">Great walk on 2 km high Name mountain</p>
+                        <span class="date">11/12/17</span>
+                        <button class="btn_transparent">learn more</button>
+                    </div>
                 </div>
 
-                <div class="card col m-4">
-                    <img src="http://www.holoweb.net/liam/pictures/2007-12-17-pt-petre-trees/img_8173-sunflare-over-snow-covered-beach-500x400.jpg" alt="niceImg.jpg" class="card-image">
-                    <span class="like icon"></span>
-                    <span class="event_caption">sale</span>
-                    <span class="caption">Get 10% off for booking <br> before NY</span>
-                    <span class="date">01/12/17 - 21/12/17</span>
-                    <button class="btn_transparent">learn more</button>
+                <div class="card-wrap col m-4">
+                    <div class="card">
+                        <img src="http://www.holoweb.net/liam/pictures/2007-12-17-pt-petre-trees/img_8173-sunflare-over-snow-covered-beach-500x400.jpg" alt="niceImg.jpg" class="card-image">
+                        <span class="like icon"></span>
+                        <span class="event-caption">sale</span>
+                        <p class="caption">Get 10% off for booking before NY</p>
+                        <span class="date">01/12/17 - 21/12/17</span>
+                        <button class="btn_transparent">learn more</button>
+                    </div>
                 </div>
 
-                <div class="card col m-4">
-                    <img src="http://www.holoweb.net/liam/pictures/2007-12-17-pt-petre-trees/img_8173-sunflare-over-snow-covered-beach-500x400.jpg" alt="niceImg.jpg" class="card-image">
-                    <span class=" icon"></span>
-                    <span class="event_caption">cultural</span>
-                    <span class="caption">Great walk on 2 km high <br> Name mountain</span>
-                    <span class="date">11/12/17</span>
-                    <button class="btn_transparent">learn more</button>
+                <div class="card-wrap col m-4">
+                    <div class="card">
+                        <img src="http://www.holoweb.net/liam/pictures/2007-12-17-pt-petre-trees/img_8173-sunflare-over-snow-covered-beach-500x400.jpg" alt="niceImg.jpg" class="card-image">
+                        <span class="like icon"></span>
+                        <span class="event-caption">cultural</span>
+                        <p class="caption">Great walk on 2 km high Name mountain</p>
+                        <span class="date">11/12/17</span>
+                        <button class="btn_transparent">learn more</button>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div>    
+        </div> 
 
         <div class="info_safety container-full">
             <h2 class="title">safety info</h2>
-            <ul class="flex-wrapper row">
-                <li class="info_item circle col m-3"><span class="caption">a</span><span class="caption-inner">Lorem ispum dolor amet izamet</span></li>
+            <ul class="row">
+                <li class="info_item col m-3"><span class="circle"><span class="caption">a</span></span><span class="caption-outer">Lorem ispum dolor amet izamet</span></li>
 
-                <li class="info_item circle col m-3"><span class="caption">a</span><span class="caption-inner">Lorem ispum dolor amet izamet</span></li>
+                <li class="info_item col m-3"><span class="circle"><span class="caption">a</span></span><span class="caption-outer">Lorem ispum dolor amet izamet</span></li>
 
-                <li class="info_item circle col m-3"><span class="caption">a</span><span class="caption-inner">Lorem ispum dolor amet izamet</span></li>
+                <li class="info_item col m-3"><span class="circle"><span class="caption">a</span></span><span class="caption-outer">Lorem ispum dolor amet izamet</span></li>
 
-                <li class="info_item circle col m-3"><span class="caption">a</span><span class="caption-inner">Lorem ispum dolor amet izamet</span></li>
+                <li class="info_item col m-3"><span class="circle"><span class="caption">a</span></span><span class="caption-outer">Lorem ispum dolor amet izamet</span></li>
             </ul>
+            <button class="btn blue btn-read_more">Read more</button>
         </div>
 
         <div class="counts container-full">
             <h2 class="title">vedmezha in numbers</h2>
-            <ul class="flex-wrapper row">
-                <li class="count_block circle col m-3"><span class="caption">1st</span><span class="caption-inner">Lorem ispum dolor amet izamet</span></li>
+            <ul class="row">
+                <li class="info_item col m-3"><span class="circle"><span class="caption">1st</span></span><span class="caption-outer">Lorem ispum dolor amet izamet</span></li>
 
-                <li class="count_block circle col m-3"><span class="caption">2h</span><span class="caption-inner">Lorem ispum dolor amet izamet</span></li>
+                <li class="info_item col m-3"><span class="circle"><span class="caption">2h</span></span><span class="caption-outer">Lorem ispum dolor amet izamet</span></li>
 
-                <li class="count_block circle col m-3"><span class="caption">1:30</span><span class="caption-inner">Lorem ispum dolor amet izamet</span></li>
-
-                <li class="count_block circle col m-3"><span class="caption">1h</span><span class="caption-inner">Lorem ispum dolor amet izamet</span></li>
+                <li class="info_item col m-3"><span class="circle"><span class="caption">1:30</span></span><span class="caption-outer">Lorem ispum dolor amet izamet</span></li>
+                
+                <li class="info_item col m-3"><span class="circle"><span class="caption">1h</span></span><span class="caption-outer">Lorem ispum dolor amet izamet</span></li>
             </ul>
-
-            <button class="btn">more info</button>
+            <button class="btn blue btn-read_more">Read more</button>
         </div>
 
         <div class="timetable container-full">
             <div class="timetable_clock">
-                <div class="time_sect"></div>
+                <div class="time_sect"></div>  
                 <span class="hours">07:00-2:00</span>
                 <ul class="days_wrap">
                     <li class="day">Mon</li>
@@ -706,10 +712,10 @@
                 <span class="days">250/365</span>
                 <p class="caption_date">Every day we help to implement
                     hundreds of transactions through our reliable platform.
-                    We maintain the highest security standards to ensure
+                    We maintain the highest security standards to ensure 
                     the safety of your data.
                 </p>
-                <a href="booking.com" class="btn_link">booking</a>
+                <a href="booking.com" class="btn blue btn-read_more">booking</a>
             </div>
         </div>
 
@@ -1289,44 +1295,46 @@
         </div>
     </main>
     <footer>
-        <div class="foo-contacts">
-            <span class="mount icon">  </span>
-            <div class="aligner">
-                <span class="contact">13 Name Avenue</span>
-                <span class="contact">City, 1017</span>
-                <span class="contact">T:212-338-5100 | F:646-307-7100</span>
+            <div class="foo-contacts">
+                <span class="mount icon">  </span>
+                <div class="aligner">
+                    <span class="contact">13 Name Avenue</span>
+                    <span class="contact">City, 1017</span>
+                    <span class="contact">T:212-338-5100 | F:646-307-7100</span>
+                </div>
             </div>
-        </div>
-        <div class="social">
-            <span class="instagram icon"></span>
-            <span class="twitter icon"></span>
-            <span class="facebook icon"></span>
-            <span class="youtube icon"></span>
-        </div>
-        <div class="foo-links">
-            <div class="footer_link-wrap">
-                <a href="http://" class="foo_link">link 1</a>
-                <a href="http://" class="foo_link">link 2</a>
-                <a href="http://" class="foo_link">link 3</a>
+            <div class="social">
+                <span class="instagram icon"></span>
+                <span class="twitter icon"></span>
+                <span class="facebook icon"></span>
+                <span class="youtube icon"></span>
             </div>
-            <div class="footer_link-wrap">
-                <a href="http://" class="foo_link">link 4</a>
-                <a href="http://" class="foo_link">link 5</a>
-                <a href="http://" class="foo_link">link 6</a>
+            <div class="foo-links">
+                <div class="footer_link-wrap">
+                    <a href="http://" class="foo_link">link 1</a>
+                    <a href="http://" class="foo_link">link 2</a>
+                    <a href="http://" class="foo_link">link 3</a>
+                </div>    
+                <div class="footer_link-wrap">
+                    <a href="http://" class="foo_link">link 4</a>
+                    <a href="http://" class="foo_link">link 5</a>
+                    <a href="http://" class="foo_link">link 6</a>
+                </div>
+                <div class="footer_link-wrap">
+                    <a href="http://" class="foo_link">link 7</a>
+                    <a href="http://" class="foo_link">link 8</a>
+                    <a href="http://" class="foo_link">link 9</a>
+                </div>
             </div>
-            <div class="footer_link-wrap">
-                <a href="http://" class="foo_link">link 7</a>
-                <a href="http://" class="foo_link">link 8</a>
-                <a href="http://" class="foo_link">link 9</a>
-            </div>
-        </div>
-        <div class="credits">
+            <div class="credits">
                 <span>2017 Vedmezha All Rights Reserved. <br>
                 Use of this website signifles your agreement to the Terms of Use and Privacy Policy <br>
                 Powered by NAME OF DIGITAL AGENCY</span>
-        </div>
+            </div>
     </footer>
 </div>
+
+
 <script src="js/includes/libs/jquery-3.1.1.min.js"></script>
 <script src="js/includes/libs/slick.min.js"></script>
 <script src="js/includes/script.js"></script>
