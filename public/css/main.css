@@ -1,4 +1,4 @@
-.btn, .card .btn_transparent {
+.btn {
   position: relative;
   display: inline-block;
   margin: 0;
@@ -19,61 +19,61 @@
   transition: all 350ms ease-in-out 0s;
   user-select: none;
   border-radius: 5px; }
-  .btn.red, .card .red.btn_transparent {
+  .btn.red {
     color: #ffffff;
     border-color: #f44336;
     background-color: #f44336; }
-    .btn.red:hover, .card .red.btn_transparent:hover {
+    .btn.red:hover {
       border-color: #f77066;
       background-color: #f77066; }
-  .btn.blue, .card .blue.btn_transparent {
+  .btn.blue {
     color: #ffffff;
     border-color: #20093f;
     background-color: #20093f; }
-    .btn.blue:hover, .card .blue.btn_transparent:hover {
+    .btn.blue:hover {
       border-color: #370f6c;
       background-color: #370f6c; }
-  .btn.green, .card .green.btn_transparent {
+  .btn.green {
     color: #ffffff;
     border-color: #4caf50;
     background-color: #4caf50; }
-    .btn.green:hover, .card .green.btn_transparent:hover {
+    .btn.green:hover {
       border-color: #6ec071;
       background-color: #6ec071; }
-  .btn.orange, .card .orange.btn_transparent {
+  .btn.orange {
     color: #ffffff;
     border-color: #ff9800;
     background-color: #ff9800; }
-    .btn.orange:hover, .card .orange.btn_transparent:hover {
+    .btn.orange:hover {
       border-color: #ffad33;
       background-color: #ffad33; }
-  .btn.bordered, .card .bordered.btn_transparent {
+  .btn.bordered {
     background-color: transparent; }
-    .btn.bordered.red, .card .bordered.red.btn_transparent {
+    .btn.bordered.red {
       color: #f44336; }
-      .btn.bordered.red:hover, .card .bordered.red.btn_transparent:hover {
+      .btn.bordered.red:hover {
         color: #ffffff;
         border-color: #f44336;
         background-color: #f44336; }
-    .btn.bordered.blue, .card .bordered.blue.btn_transparent {
+    .btn.bordered.blue {
       color: #20093f; }
-      .btn.bordered.blue:hover, .card .bordered.blue.btn_transparent:hover {
+      .btn.bordered.blue:hover {
         color: #ffffff;
         border-color: #20093f;
         background-color: #20093f; }
-    .btn.bordered.green, .card .bordered.green.btn_transparent {
+    .btn.bordered.green {
       color: #4caf50; }
-      .btn.bordered.green:hover, .card .bordered.green.btn_transparent:hover {
+      .btn.bordered.green:hover {
         color: #ffffff;
         border-color: #4caf50;
         background-color: #4caf50; }
-    .btn.bordered.orange, .card .bordered.orange.btn_transparent {
+    .btn.bordered.orange {
       color: #ff9800; }
-      .btn.bordered.orange:hover, .card .bordered.orange.btn_transparent:hover {
+      .btn.bordered.orange:hover {
         color: #ffffff;
         border-color: #ff9800;
         background-color: #ff9800; }
-  .btn.rounded, .card .rounded.btn_transparent {
+  .btn.rounded {
     border-radius: 5px; }
 
 .container, .container-full {
@@ -1081,6 +1081,15 @@ li {
   .show_on_tablet-and_up {
     display: block !important; } }
 
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #13143c;
+  margin: 9rem auto 9rem auto;
+  width: 100%; }
+
 .main_header {
   height: 100vh;
   background-size: cover;
@@ -1385,141 +1394,181 @@ li {
   .practice_menu .practice_block .practice_item {
     display: none; }
 
-.counts .flex-wrapper {
-  padding: 0 10rem;
-  justify-content: space-around;
-  margin-bottom: 15rem; }
-
-.counts .circle {
-  display: block;
-  position: relative;
-  width: 140px;
-  height: 140px;
-  line-height: 140px;
-  text-align: center;
-  border: 1px solid #000;
-  border-radius: 50%; }
-
-.counts .caption, .counts .card .date, .card .counts .date {
-  display: block;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2rem;
-  color: #000; }
-  .counts .caption-inner {
+.counts {
+  padding: 0; }
+  .counts .info_item {
     display: block;
-    line-height: 1;
-    padding: 1rem 0;
-    font-size: 1rem;
-    color: #000; }
-
-.counts .btn, .counts .card .btn_transparent, .card .counts .btn_transparent {
-  display: block;
-  margin: 1rem auto;
-  padding: .7rem 2rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 7px;
-  background-color: #13143c;
-  transition: all .5s ease-in-out;
-  color: #fff; }
-  .counts .btn:hover, .counts .card .btn_transparent:hover, .card .counts .btn_transparent:hover {
-    background-color: #fff;
-    color: #000; }
-
-.title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-weight: 700;
-  color: #13143c;
-  margin: 4rem auto 9rem auto;
-  width: 100%; }
-
-.cards_block {
-  margin: 5rem 0; }
-  .cards_block .col {
-    padding: 0;
-    margin: 0 4rem; }
-
-.card {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
-  max-width: 500px; }
-  .card-image {
-    border-top: 8px solid #13143c;
-    width: 100%; }
-  .card .like {
-    position: absolute;
-    top: 5px;
-    right: 5px; }
-  .card .event_caption {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    padding: .7rem;
+    margin-bottom: 8rem;
     width: 100%;
-    font-size: 1.2rem;
-    color: #b3b3b3; }
-  .card .caption, .card .date {
-    display: block;
-    font-size: 1.3rem;
-    text-align: center; }
-  .card .date {
-    font-size: .9rem;
-    padding-top: .5rem; }
-  .card .btn, .card .btn_transparent {
-    display: block;
-    margin: 1rem auto;
-    padding: .5rem 2rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 5px;
-    background-color: #13143c;
-    transition: all .5s ease-in-out; }
-    .card .btn_transparent {
-      border: 1px solid #000;
-      border-radius: 25px;
-      background-color: transparent; }
-      .card .btn_transparent:hover {
-        background-color: #13143c;
-        color: #fff; }
-
-.info_safety {
-  background-image: url("http://eskipaper.com/images/large-2.jpg"); }
-  .info_safety .col {
-    padding: 0; }
-  .info_safety .row {
-    margin-bottom: 13rem; }
-  .info_safety .info_item {
-    display: block;
-    position: relative;
-    width: 25%;
     height: 140px;
     line-height: 140px;
     text-align: center; }
-    .info_safety .info_item .circle {
+  .counts .circle {
+    display: inline-block;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 140px; }
+  .counts .caption {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #000; }
+    .counts .caption-outer {
       display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
+      line-height: 1;
+      padding: 1rem 4rem;
+      font-size: 1.6rem;
+      color: #000; }
+  .counts .btn-read_more {
+    display: block;
+    margin: 5rem auto 5rem; }
+
+@media (min-width: 768px) {
+  .counts {
+    padding: 0 10vw; }
+    .counts .info_item {
+      width: 25%;
+      margin-bottom: 0; }
+    .counts .btn-read_more {
+      display: block;
+      margin: 19rem auto 9rem; } }
+
+.cards-block .card {
+  position: relative;
+  padding-bottom: 2rem;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+  margin-bottom: 8rem; }
+  .cards-block .card-wrap {
+    padding: 0 5rem; }
+  .cards-block .card img {
+    min-width: 100%;
+    height: auto; }
+  .cards-block .card .like {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff; }
+  .cards-block .card .event-caption, .cards-block .card .date {
+    display: block;
+    width: 100%;
+    padding: 1rem 0 0 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #8B8D99; }
+  .cards-block .card .date {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 2rem; }
+  .cards-block .card .caption {
+    margin: .5rem auto;
+    max-width: 30rem;
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 700; }
+  .cards-block .card .btn_transparent {
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8rem;
+    padding: .3rem 2.2rem;
+    border: 1px solid #000;
+    border-radius: 25px;
+    transition: all 250ms ease-in-out; }
+    .cards-block .card .btn_transparent:hover {
+      background-color: #13143c;
+      color: #fff; }
+
+.info_safety {
+  background-image: url("../img/daniel-frank-223182.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0; }
+  .info_safety .info_item {
+    margin-bottom: 8rem;
+    display: block;
+    width: 100%;
+    height: 140px;
+    line-height: 140px;
+    text-align: center; }
+    .info_safety .info_item:first-child .circle:before {
+      display: none; }
+    .info_safety .info_item:last-child .circle:after {
+      display: none; }
+    .info_safety .info_item .circle {
+      display: inline-block;
+      position: relative;
       width: 140px;
       height: 140px;
+      vertical-align: top;
       border: 1px solid #fff;
-      border-radius: 50%; }
-    .info_safety .info_item .caption, .info_safety .info_item .card .date, .card .info_safety .info_item .date {
-      display: block;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 140px; }
+      .info_safety .info_item .circle:after {
+        content: " ";
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 100%;
+        height: 1px;
+        background-color: #fff;
+        width: 50%; }
+      .info_safety .info_item .circle:before {
+        content: " ";
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 100%;
+        height: 1px;
+        background-color: #fff;
+        width: 50%; }
+    .info_safety .info_item .caption {
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 2rem;
+      font-size: 4rem;
       color: #fff; }
-      .info_safety .info_item .caption-inner {
+      .info_safety .info_item .caption-outer {
         display: block;
         line-height: 1;
-        padding: 1rem 0;
-        font-size: 1rem;
+        padding: 1rem 4rem;
+        font-size: 1.3rem;
         color: #fff; }
+  .info_safety .btn-read_more {
+    display: block;
+    margin: 5rem auto 5rem; }
+
+@media (min-width: 768px) {
+  .info_safety {
+    padding: 0 10vw; }
+    .info_safety .info_item {
+      width: 25%;
+      margin-bottom: 0; }
+      .info_safety .info_item .circle:after {
+        display: inline-block; }
+      .info_safety .info_item .circle:before {
+        display: inline-block; }
+    .info_safety .btn-read_more {
+      display: block;
+      margin: 19rem auto 9rem; } }
 
 footer {
   display: flex;
