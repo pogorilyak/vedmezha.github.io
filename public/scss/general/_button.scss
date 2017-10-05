@@ -6,21 +6,11 @@ $btn-green  : color('state','green');
 $btn-orange : color('state','orange');
 // ----------------------
 
-// Buttons style
-// button {
-//   &.close { // popup close button
-//     padding: 0;
-//     cursor: pointer;
-//     background: none;
-//     border: 0;
-//   }
-// }
-
 .btn {  // general styles for all buttons(<a>, <button>)
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: 8px 16px;
+  padding: 12px 16px;
   background-color: transparent;
   border: none {
     width: 1px;
@@ -40,6 +30,7 @@ $btn-orange : color('state','orange');
   vertical-align: middle;
   transition: all 350ms ease-in-out 0s;
   user-select: none;
+  border-radius: 5px;
   //@include rem(font-size, 16px);
 
   &.red {

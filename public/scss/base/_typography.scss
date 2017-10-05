@@ -21,7 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  @include default-font-size($size-body);
+  font-size: 1.6rem;
+  //@include default-font-size($size-body);
 }
 
 h1 {
