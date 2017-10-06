@@ -62,4 +62,52 @@
 
     $navigationLinks.on('click', toggleSubMenu);
 
+    $('#slider').slick({
+        slide: 'li',
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: '460px',
+        prevArrow: '<button type="button" class="slick-prev"><span></span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span></span></button>',
+        responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                    centerPadding: '300px'
+                }
+            },
+            {
+                breakpoint: 960,
+                settings: {
+                    adaptiveHeight: true,
+                    centerPadding: '200px'
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    adaptiveHeight: true,
+                    centerPadding: '100px'
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    adaptiveHeight: true,
+                    centerPadding: '0'
+                }
+            }
+        ],
+        dots: true,
+        dotsClass: 'slider-paging-number',
+        customPaging: function (slick) {
+            return (slick.currentSlide + 1) + '/' + slick.slideCount;
+        }
+    }).on('afterChange', function (event, slick, currentSlide) {
+        $(this).find('*[role="tablist"]')
+            .find('li')
+            .eq(0)
+            .text(slick.options.customPaging.call(this, slick, currentSlide));
+    });
+
 })(jQuery);

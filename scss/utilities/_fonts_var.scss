@@ -1,13 +1,13 @@
 // General variables ----
 $default-fonts  : "Helvetica", Arial, sans-serif;
 $base-font-name : 'Open Sans';
-$extra-font-name : 'Monsterrat';
+$extra-font-name : 'roboto';
 // ----------------------
 
 // Fonts path -----------
 $font-path      : '../fonts/';
 $base-font-path : 'opensans/';
-$extra-font-path : 'monsterrat/';
+$extra-font-path : 'roboto/';
 // ----------------------
 
 // Fonts file count -----
@@ -21,8 +21,7 @@ $base-font-file : (
         2: 'open-sans-bold'
 );
 $extra-font-file : (
-        1: 'Montserrat_Bold',
-        2: 'Montserrat_Light'
+        1: 'roboto-bold'
 );
 // ----------------------
 
@@ -37,12 +36,10 @@ $base-font-local-2 : (
 );
 
 $extra-font-local-1 : (
-        1: 'Montserrat Bold',
-        2: 'Montserrat Light'
+        1: 'roboto bold'
 );
 $extra-font-local-2 : (
-        1: 'MontserratBold',
-        2: 'MontserratLight'
+        1: 'robotoBold'
 );
 // ----------------------
 
@@ -52,14 +49,13 @@ $base-font-weight  : (
         2: 700
 );
 $extra-font-weight  : (
-        1: 700,
-        2: 300
+        1: 700
 );
 // ----------------------
 
 // Fonts family variables
 $base-font-family  : $base-font-name, $default-fonts !default;
-$extra-font-family  : $extra-font-name, $default-fonts !default;
+$extra-font-family : $extra-font-name, $default-fonts !default;
 
 // Typography -----------
 @function lineHeight($lh, $fs) {  // lh - line-height, fs - font-size
