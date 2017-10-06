@@ -9,7 +9,7 @@
     .info_item {
         margin-bottom: 8rem;
         display: block;
-        width: 100%;
+        width: 50%;
         height: 140px;
         line-height: 140px;
         text-align: center;
@@ -30,6 +30,24 @@
             }
         }
 
+        &:nth-child(2) {
+            .circle {
+                &:after {
+                    display: none;
+                }
+            }
+
+        }
+
+        &:nth-child(3) {
+            .circle {
+                &:before {
+                    display: none;
+                }
+            }
+
+        }
+
         .circle {
             display: inline-block;
             position: relative;
@@ -43,24 +61,24 @@
 
             &:after {
                 content: " ";
-                display: none;
+                display: inline-block;
                 position: absolute;
                 top: 70px;
                 left: 100%;
                 height: 1px;
                 background-color: #fff;
-                width: 50%;
+                width: 100%;
             }
 
             &:before {
                 content: " ";
-                display: none;
+                display: inline-block;
                 position: absolute;
                 top: 70px;
                 right: 100%;
                 height: 1px;
                 background-color: #fff;
-                width: 50%;
+                width: 100%;
             }
 
         }
@@ -102,14 +120,35 @@
 
                 &:after {
                     display: inline-block;
+                    width: 50%;
 
                 }
 
                 &:before {
                     display: inline-block;
+                    width: 50%;
                 }
 
             }
+
+            &:nth-child(2) {
+                .circle {
+                    &:after {
+                        display: inline-block;
+                    }
+                }
+
+            }
+
+            &:nth-child(3) {
+                .circle {
+                    &:before {
+                        display: inline-block;
+                    }
+                }
+
+            }
+
 
         }
 
@@ -118,4 +157,5 @@
             margin: 19rem auto 9rem;
         }
     }
+
 }

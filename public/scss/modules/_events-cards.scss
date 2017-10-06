@@ -1,13 +1,13 @@
 .cards-block {
 
     .card {
+        margin: 3rem;
         position: relative;
         padding-bottom: 2rem;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
-        margin-bottom: 8rem;
 
         &-wrap {
-            padding: 0 5rem;
+
         }
 
         img {
@@ -32,21 +32,21 @@
             text-transform: uppercase;
             font-weight: 800;
             text-align: center;
-            font-size: 2.4rem;
+            font-size: 1.4rem;
             color: #8B8D99;
         }
 
         .date {
             @extend .event-caption;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 700;
             padding-bottom: 2rem;
         }
 
         .caption {
             margin: .5rem auto;
-            max-width: 30rem;
-            font-size: 2.2rem;
+            max-width: 25rem;
+            font-size: 1.7rem;
             text-align: center;
             font-weight: 700;
         }
@@ -57,7 +57,7 @@
             background: transparent;
             text-transform: uppercase;
             font-weight: 800;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             padding: .3rem 2.2rem;
             border: 1px solid #000;
             border-radius: 25px;
@@ -66,6 +66,86 @@
             &:hover {
                 background-color: #13143c;
                 color: #fff;
+            }
+
+        }
+
+    }
+
+}
+
+
+@media (min-width: $medium-screen) {
+
+    .cards-block {
+
+        .card {
+            margin: 0 auto 8rem auto;
+            position: relative;
+            padding-bottom: 2rem;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+
+            &-wrap {
+                padding: 0 5rem;
+            }
+
+            img {
+                min-width: 100%;
+                height: auto;
+            }
+
+            .like {
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                width: 2rem;
+                height: 2rem;
+                background-color: #fff;
+            }
+
+            .event-caption {
+                display: block;
+                width: 100%;
+                padding: 1rem 0 0 0;
+                text-transform: uppercase;
+                font-weight: 800;
+                text-align: center;
+                font-size: 1.4rem;
+                color: #8B8D99;
+            }
+
+            .date {
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding-bottom: 1.3rem;
+            }
+
+            .caption {
+                margin: .5rem auto;
+                max-width: 30rem;
+                font-size: 1.8rem;
+                text-align: center;
+                font-weight: 700;
+            }
+
+            .btn_transparent {
+                display: block;
+                margin: 0 auto;
+                background: transparent;
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 1.8rem;
+                padding: .3rem 2.2rem;
+                border: 1px solid #000;
+                border-radius: 25px;
+                transition: all 250ms ease-in-out;
+
+                &:hover {
+                    background-color: #13143c;
+                    color: #fff;
+                }
+
             }
 
         }
