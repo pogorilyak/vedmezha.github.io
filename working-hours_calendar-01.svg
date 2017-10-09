@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 205 205" style="enable-background:new 0 0 205 205;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<g id="calendar_icon">
+	<path class="st0" d="M165.1,26.8h16.6c3.5,0,6.3,2.8,6.3,6.3v158.4c0,3.5-2.8,6.3-6.3,6.3H23.3c-3.5,0-6.3-2.8-6.3-6.3V33.1
+		c0-3.5,2.8-6.3,6.3-6.3h16.6"/>
+	<line class="st0" x1="59.1" y1="26.8" x2="145.4" y2="26.8"/>
+	<circle class="st0" cx="48.8" cy="92.2" r="10.2"/>
+	<circle class="st0" cx="84.6" cy="92.2" r="10.2"/>
+	<circle class="st0" cx="120.4" cy="92.2" r="10.2"/>
+	<circle class="st0" cx="156.2" cy="92.2" r="10.2"/>
+	<circle class="st0" cx="48.8" cy="129.5" r="10.2"/>
+	<circle class="st0" cx="84.6" cy="129.5" r="10.2"/>
+	<circle class="st0" cx="120.4" cy="129.5" r="10.2"/>
+	<circle class="st0" cx="156.2" cy="129.5" r="10.2"/>
+	<circle class="st0" cx="48.8" cy="166.7" r="10.2"/>
+	<circle class="st0" cx="84.6" cy="166.7" r="10.2"/>
+	<circle class="st0" cx="120.4" cy="166.7" r="10.2"/>
+	<circle class="st0" cx="156.2" cy="166.7" r="10.2"/>
+	<line class="st0" x1="17" y1="61.2" x2="188" y2="61.2"/>
+	<path class="st0" d="M49.7,46.4L49.7,46.4c-5.4,0-9.8-4.4-9.8-9.8V17.1c0-5.4,4.4-9.8,9.8-9.8l0,0c5.4,0,9.8,4.4,9.8,9.8v19.5
+		C59.6,41.9,55.1,46.4,49.7,46.4z"/>
+	<path class="st0" d="M155.3,46.4L155.3,46.4c-5.4,0-9.8-4.4-9.8-9.8V17.1c0-5.4,4.4-9.8,9.8-9.8l0,0c5.4,0,9.8,4.4,9.8,9.8v19.5
+		C165.1,41.9,160.7,46.4,155.3,46.4z"/>
+</g>
+</svg>

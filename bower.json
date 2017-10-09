@@ -1,0 +1,19 @@
+{
+  "name": "vedmezha",
+  "description": "vedmezha",
+  "authors": [
+    "freelancers"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/js/libs",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.0"
+  }
+}
