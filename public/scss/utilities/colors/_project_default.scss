@@ -38,6 +38,7 @@ $colors: (
 
 
 // Base ------------------
+$basic-blue  : color('state','blue');
 $base-bg     : $white;
 $base-text   : color('default','dark-grey');
 $base-link   : color('default','blue');

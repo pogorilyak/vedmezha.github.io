@@ -1373,18 +1373,87 @@ main {
     float: right;
     margin: 0 2px; }
 
-.caption-date {
-  max-width: 300px;
-  text-align: center; }
+.working_hours-block {
+  position: relative;
+  color: #ffffff;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../images/timetable-bg.jpg"); }
+  .working_hours-block:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background-color: #20093f; }
+  .working_hours-block-wrap {
+    padding: 1rem 0; }
+  .working_hours-block .title {
+    position: relative;
+    top: 4rem;
+    color: #ffffff;
+    font-size: 3rem; }
+  .working_hours-block .clock-icon {
+    display: block;
+    margin: auto;
+    width: 15rem; }
+  .working_hours-block .timetable-counts {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700; }
+  .working_hours-block .caption_date {
+    margin: 0 auto;
+    max-width: 30rem;
+    text-align: center; }
+  .working_hours-block .checked_days-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .working_hours-block .checked_days-wrap .day {
+      display: inline-block;
+      padding: 2rem;
+      text-align: center; }
+    .working_hours-block .checked_days-wrap .check-icon {
+      display: block;
+      margin: auto;
+      width: 4rem; }
+  .working_hours-block .calendar_icon {
+    display: block;
+    margin: auto;
+    width: 15rem; }
+  .working_hours-block .btn-read_more {
+    display: block;
+    margin: 5rem auto; }
 
-.timetable_clock {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.hours {
-  font-size: 2rem;
-  font-weight: 700; }
+@media (min-width: 768px) {
+  .working_hours-block .working_hours-wrap {
+    margin-bottom: 3rem;
+    padding: 3rem 5rem; }
+  .working_hours-block .title {
+    font-size: 4rem;
+    margin: 9rem auto; }
+  .working_hours-block .checked_days-wrap {
+    max-width: 35rem;
+    margin: 0 auto; }
+  .working_hours-block .clock-icon, .working_hours-block .calendar_icon {
+    width: 20rem; }
+  .working_hours-block .timetable_watch:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -0.5rem;
+    width: .1em;
+    height: 100%;
+    background-color: #ffffff; } }
 
 .main_header {
   height: 100vh;
