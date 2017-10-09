@@ -1,0 +1,15 @@
+.caption-date {
+  max-width: 300px;
+  text-align: center;
+}
+
+.timetable_clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hours {
+  font-size: 2rem;
+  font-weight: 700;
+}

@@ -1373,6 +1373,19 @@ main {
     float: right;
     margin: 0 2px; }
 
+.caption-date {
+  max-width: 300px;
+  text-align: center; }
+
+.timetable_clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.hours {
+  font-size: 2rem;
+  font-weight: 700; }
+
 .main_header {
   height: 100vh;
   background-size: cover;
