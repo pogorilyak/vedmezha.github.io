@@ -158,6 +158,16 @@
   align-items: center;
 }
 
+.hamburger_open,
+.hamburger_close {
+
+  .hide_on_mobile {
+    margin-left: 1rem;
+    display: inline-block;
+    font-size: 2rem;
+  }
+}
+
 .site_navigation {
   display: flex;
   flex-direction: column;
@@ -463,5 +473,29 @@
     .practice_item {
       display: none;
     }
+  }
+}
+
+.header_sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0,0,0,.2);
+  transform: translateY(-100%);
+
+  &.is-visible {
+    transform: none;
+  }
+
+  .sticky_profile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 12rem;
+    background-color: #13143c;
   }
 }

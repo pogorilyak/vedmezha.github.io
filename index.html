@@ -16,7 +16,8 @@
 </head>
 <body>
 <div class="main-wrapper">
-    <header class="main_header" style="background-image: url('public/images/main_header_background.jpg')">
+    <header class="main_header js-main_header"
+            style="background-image: url('public/images/main_header_background.jpg')">
         <div class="container header_container">
             <div class="site_header">
                 <div class="header_logo">
@@ -354,6 +355,7 @@
                                       rx="1"></rect>
                             </g>
                         </svg>
+                        <span class="hide_on_mobile">MENU</span>
                     </div>
                 </li>
             </ul>
@@ -445,6 +447,7 @@
                             <path d="M11.414 10l7.8 7.8.708.707-1.415 1.415-.707-.708-7.8-7.8-7.8 7.8-.707.708-1.415-1.415.708-.707 7.8-7.8L.793 2.207.086 1.5 1.5.086l.707.707L10 8.586 17.793.793 18.5.086 19.914 1.5l-.707.707L11.414 10z">
                             </path>
                         </svg>
+                        <span class="hide_on_mobile">MENU</span>
                     </li>
                 </ul>
                 <nav class="site_navigation">
@@ -689,6 +692,22 @@
                 </g>
             </svg>
             </div>
+        </div>
+        <div class="header_sticky js-header_sticky">
+            <a class="sticky_profile js-profile-full-toggle"
+               href="#">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0_bq{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    </style>
+                    <g id="_x33_">
+                        <path class="st0_bq" d="M2.1,35.6v-0.5c0-6.6,6.8-12,15.1-12h5.7c8.3,0,15.1,5.4,15.1,12v0.5"></path>
+                        <circle class="st0_bq" cx="20" cy="13.7" r="9.4"></circle>
+                    </g>
+                </svg>
+            </a>
+            <div class="sticky_content"></div>
+            <div class="sticky_navigation"></div>
         </div>
     </header>
     <main>
@@ -1728,7 +1747,7 @@
                     <p class="info_item">&#169;2017 Vedmezha All Rights Reserved.</p>
                     <p class="info_item">Use of this website signifles your agreement to the Terms of Use and Privacy Policy</p>
                     <p class="info_item">Powered by NAME OF DIGITAL AGENCY</p>
-                k</div>
+                </div>
             </div>
         </div>
     </footer>
