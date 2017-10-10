@@ -1,15 +1,125 @@
-.caption-date {
-  max-width: 300px;
-  text-align: center;
+@import "../utilities/colors/project_default";
+@import "../utilities/variables";
+
+.working_hours-block {
+  position: relative;
+  color: $white;
+  background: {
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+    image: url("../images/timetable-bg.jpg");
+  };
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background-color: $basic-blue;
+  }
+  &-wrap {
+    padding: 1rem 0;
+  }
+
+  .title {
+    position: relative;
+    top: 4rem;
+    color: $white;
+    font-size: 3rem;
+
+  }
+
+  .clock-icon {
+    display: block;
+    margin: auto;
+    width: 15rem;
+  }
+
+  .timetable-counts {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .caption_date {
+    margin: 0 auto;
+    max-width: 30rem;
+    text-align: center;
+  }
+
+  .checked_days-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .day {
+      display: inline-block;
+      padding: 2rem;
+      text-align: center;
+
+    }
+
+    .check-icon {
+      display: block;
+      margin: auto;
+      width: 4rem;
+    }
+  }
+
+  .calendar_icon {
+    display: block;
+    margin: auto;
+    width: 15rem;
+  }
+
+  .btn-read_more {
+    display: block;
+    margin: 5rem auto;
+  }
 }
 
-.timetable_clock {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+@media (min-width: $medium-screen) {
+  .working_hours-block {
 
-.hours {
-  font-size: 2rem;
-  font-weight: 700;
+    .working_hours-wrap {
+      margin: {
+        top: 7rem;
+        bottom: 3rem;
+      };
+      padding: 3rem 5rem;
+    }
+
+    .title {
+      font-size: 4rem;
+      margin: 0 auto;
+    }
+
+    .checked_days-wrap {
+      max-width: 35rem;
+      margin: 0 auto;
+    }
+
+    .clock-icon, .calendar_icon {
+      width: 20rem;
+    }
+
+    .timetable_watch:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -0.5rem;
+      width: .1em;
+      height: 100%;
+      background-color: $white;
+    }
+  }
 }

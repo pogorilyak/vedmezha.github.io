@@ -1,69 +1,115 @@
+@import "../utilities/variables";
+
 .counts {
-  padding: 0;
 
-
-    .info_item {
-      display: block;
-      margin-bottom: 8rem;
-      width: 50%;
-      height: 140px;
-      line-height: 140px;
-      text-align: center;
-
+    .title {
+      font-size: 3rem;
+      margin: 2rem auto;
     }
 
-    .circle {
-      display: inline-block;
-      position: relative;
-      width: 140px;
-      height: 140px;
-      vertical-align: top;
-      border: 1px solid #000;
-      border-radius: 50%;
+    .info_item {
       text-align: center;
-      line-height: 140px;
-
+      color: $black;
+      vertical-align: middle;
     }
 
     .caption {
+      position: relative;
       display: inline-block;
-      line-height: 1;
-      vertical-align: middle;
+      width: 50%;
+      height: 120px;
+      margin-bottom: 1.2rem;
+      line-height: 120px;
       text-transform: uppercase;
-      font-weight: bold;
-      font-size: 4rem;
-      color: #000;
+      font-size: 2.5rem;
+      font-weight: 700;
 
       &-outer {
-        display: block;
-        line-height: 1;
-        padding: 1rem 4rem;
-        font-size: 1.6rem;
-        color: #000;
+        display: inline-block;
+        max-width: 10rem;
+
       }
     }
 
-    .btn-read_more {
+    .circle {
       display: block;
-      margin: 5rem auto 5rem;
+      width: 120px;
+      height: 120px;
+      border: {
+        width: 1px;
+        color: $black;
+        style: solid;
+        radius: 50%;
+      };
     }
-  }
 
+    .btn {
+      display: block;
+      margin: 3rem auto;
+    }
 
-@media (min-width: $medium-screen) {
+}
+
+@media (min-width: $small-screen) {
   .counts {
-    padding: 0 10vw;
 
-    .info_item {
-      width: 25%;
+    .caption {
       margin-bottom: 0;
+      line-height: 140px;
+      height: 140px;
+      width: 140px;
 
+      &-outer {
+        display: block;
+        margin: 2rem auto;
+      }
+
+      .circle {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+      }
     }
 
-    .btn-read_more {
-      display: block;
-      margin: 19rem auto 9rem;
-    }
   }
 }
+
+@media (min-width: $medium-screen) {
+
+  .counts {
+
+    .title {
+      font-size: 4.5rem;
+      margin: 6rem auto;
+    }
+
+    .caption {
+      margin-bottom: 0;
+      line-height: 140px;
+      height: 140px;
+      width: 140px;
+
+      &-outer {
+        display: block;
+        margin: 2rem auto;
+      }
+
+      .circle {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+      }
+    }
+
+    .info_item-wrap {
+      padding: 5rem auto;
+
+    }
+
+  }
+}
+
+
+
+
 
