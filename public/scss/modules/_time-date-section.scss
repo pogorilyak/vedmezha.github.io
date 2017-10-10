@@ -90,13 +90,16 @@
   .working_hours-block {
 
     .working_hours-wrap {
-      margin-bottom: 3rem;
+      margin: {
+        top: 7rem;
+        bottom: 3rem;
+      };
       padding: 3rem 5rem;
     }
 
     .title {
       font-size: 4rem;
-      margin: 9rem auto;
+      margin: 0 auto;
     }
 
     .checked_days-wrap {
