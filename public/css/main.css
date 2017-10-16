@@ -263,14 +263,14 @@ input[type="checkbox"], input[type="radio"] {
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans/open-sans-regular.woff2") format("woff2"), url("../fonts/opensans/open-sans-regular.woff") format("woff"); }
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensans/open-sans-light.woff2") format("woff2"), url("../fonts/opensans/open-sans-light.woff") format("woff"); }
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 700;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensans/open-sans-bold.woff2") format("woff2"), url("../fonts/opensans/open-sans-bold.woff") format("woff"); }
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans/open-sans-regular.woff2") format("woff2"), url("../fonts/opensans/open-sans-regular.woff") format("woff"); }
 
 @font-face {
   font-family: "roboto";
@@ -1083,6 +1083,16 @@ main {
 @media (min-width: 768px) {
   .show_on_tablet-and_up {
     display: block !important; } }
+
+@media (min-width: 768px) {
+  .border_L-medium_screen {
+    border-left: 1px solid #fff; } }
+
+@media (min-width: 992px) {
+  .borders_LR-large_screen {
+    border: 1px solid #fff;
+    border-top: 0;
+    border-bottom: 0; } }
 
 .title {
   text-align: center;
@@ -2060,6 +2070,115 @@ main {
     .info_safety .info_item-wrap :last-child .caption:after {
       display: none; } }
 
+.location_wrap {
+  padding: 4em 0;
+  background-color: #0a0e39; }
+  .location_wrap .location_illustration,
+  .location_wrap .location_info {
+    margin: 2rem 0;
+    padding: 2rem 1rem; }
+  .location_wrap .location_wrap-inner {
+    display: flex;
+    flex-direction: column; }
+    .location_wrap .location_wrap-inner .location_illustration {
+      flex-grow: 1; }
+    .location_wrap .location_wrap-inner .location_info {
+      min-width: 25%; }
+    @media (min-width: 768px) {
+      .location_wrap .location_wrap-inner {
+        flex-direction: row; }
+        .location_wrap .location_wrap-inner .location_illustration {
+          padding: 2rem 3rem 2rem 0; }
+        .location_wrap .location_wrap-inner .location_info {
+          padding: 2rem 0 2rem 3rem; } }
+  .location_wrap .location_switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    color: #fff;
+    user-select: none; }
+    @media (min-width: 768px) {
+      .location_wrap .location_switcher {
+        justify-content: flex-start; } }
+    .location_wrap .location_switcher label {
+      display: flex;
+      margin: 0 1rem; }
+    .location_wrap .location_switcher .switcher_input {
+      display: none; }
+      .location_wrap .location_switcher .switcher_input + span {
+        height: 1.6rem;
+        width: 4.5rem;
+        display: inline-block;
+        padding: .1rem;
+        background-color: #fff;
+        border-radius: .8rem;
+        cursor: pointer; }
+        .location_wrap .location_switcher .switcher_input + span:after {
+          content: '';
+          float: left;
+          width: 1.4rem;
+          height: 1.4rem;
+          background-color: #0a0e39;
+          border-radius: .7rem;
+          transition: transform .3s ease; }
+      .location_wrap .location_switcher .switcher_input:checked + span:after {
+        transform: translateX(2.8rem); }
+  .location_wrap .location_list {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: #fff; }
+    .location_wrap .location_list .list_item {
+      padding: 1rem; }
+      .location_wrap .location_list .list_item + .list_item {
+        border-top: .1rem solid #fff; }
+  .location_wrap .list_item h4, .location_wrap .list_item p {
+    margin: 0; }
+  .location_wrap .list_item h4 {
+    font-size: 1.6rem;
+    font-weight: 600; }
+  .location_wrap .list_item p {
+    font-weight: 300; }
+
+.weather_slider {
+  padding: 10rem 0 13rem;
+  color: #12143c; }
+  .weather_slider .slider_item {
+    width: 25%;
+    padding: 1rem 5rem 3rem;
+    text-align: center; }
+  .weather_slider .weather_temperature {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 300; }
+    .weather_slider .weather_temperature:after {
+      content: '\00b0';
+      font-size: 4rem; }
+  .weather_slider .weather_type {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem; }
+  .weather_slider .weather_date {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0; }
+    .weather_slider .weather_date span {
+      padding: 0 .5rem;
+      white-space: nowrap; }
+      .weather_slider .weather_date span + span {
+        border-left: .1rem solid #12143c; }
+  .weather_slider .felt_temperature {
+    font-size: 3.8rem;
+    margin: 0; }
+  .weather_slider .felt_description {
+    font-size: 1.2rem;
+    margin: 0; }
+
 .main_footer {
   display: flex;
   flex-wrap: wrap;
@@ -2087,19 +2206,9 @@ main {
     .footer_address-wrap .footer_address p {
       margin: 0; }
 
-@media (min-width: 992px) {
-  .borders_LR-large_screen {
-    border: 1px solid #fff;
-    border-top: 0;
-    border-bottom: 0; } }
-
 .footer_info {
   text-align: center;
   margin: 2rem 0 0; }
-  .footer_info:after {
-    content: '';
-    display: table;
-    clear: both; }
   .footer_info .info_item {
     margin: 0; }
     .footer_info .info_item:last-child {

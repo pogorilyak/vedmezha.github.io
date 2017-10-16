@@ -17,8 +17,10 @@ $extra-font-count : 2;
 
 // Fonts files ----------
 $base-font-file : (
-        1: 'open-sans-regular',
-        2: 'open-sans-bold'
+        1: 'open-sans-light',
+        2: 'open-sans-regular',
+        3: 'open-sans-semibold',
+        4: 'open-sans-bold'
 );
 $extra-font-file : (
         1: 'roboto-bold'
@@ -27,12 +29,16 @@ $extra-font-file : (
 
 // Fonts local name -----
 $base-font-local-1 : (
-        1: 'Open Sans',
-        2: 'Open Sans Bold'
+        1: 'Open Sans Light',
+        2: 'Open Sans',
+        3: 'Open Sans Semi Bold',
+        4: 'Open Sans Bold'
 );
 $base-font-local-2 : (
-        1: 'OpenSans',
-        2: 'OpenSans-Bold'
+        1: 'OpenSans-Light',
+        2: 'OpenSans',
+        3: 'OpenSans-SemiBold',
+        4: 'OpenSans-Bold'
 );
 
 $extra-font-local-1 : (
@@ -45,8 +51,10 @@ $extra-font-local-2 : (
 
 // Fonts weight ---------
 $base-font-weight  : (
-        1: 400,
-        2: 700
+        1: 300,
+        2: 400,
+        3: 600,
+        4: 700
 );
 $extra-font-weight  : (
         1: 700

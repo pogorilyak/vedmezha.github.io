@@ -18,6 +18,21 @@ main {
     display: block !important;
   }
 }
+
+.border_L-medium_screen {
+  @media (min-width: $medium-screen) {
+    border-left: 1px solid #fff;
+  }
+}
+
+.borders_LR-large_screen {
+  @media (min-width: $large-screen) {
+    border: 1px solid #fff;
+    border-top: 0;
+    border-bottom: 0;
+  }
+}
+
 .title {
   text-align: center;
   text-transform: uppercase;
