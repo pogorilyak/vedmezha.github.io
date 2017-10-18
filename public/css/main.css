@@ -1089,8 +1089,10 @@ main {
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 700;
-  color: #13143c;
-  margin: 9rem auto 9rem auto;
+  color: #20093f;
+  margin: 0;
+  vertical-align: middle;
+  padding: 5rem 0;
   width: 100%; }
 
 /* Slider */
@@ -1372,6 +1374,63 @@ main {
   .slider_card .card_hash_item {
     float: right;
     margin: 0 2px; }
+
+.cam_wrap {
+  padding: 3rem; }
+  .cam_wrap-second {
+    background-color: #20093f; }
+    .cam_wrap-second .title {
+      color: #ffffff; }
+  .cam_wrap-front .st0_h {
+    stroke: #20093f; }
+  .cam_wrap-front .st1_h {
+    stroke: #20093f; }
+  .cam_wrap-front .st2_h {
+    stroke: #20093f; }
+  .cam_wrap-tsd .st0_h {
+    stroke: #20093f; }
+  .cam_wrap-tsd .st1_h {
+    stroke: #20093f; }
+  .cam_wrap-tsd .st2_h {
+    stroke: #20093f; }
+
+.cam_view-wrap {
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+  overflow-y: hidden;
+  overflow-x: auto; }
+  .cam_view-wrap .img-view {
+    max-width: 5000vh;
+    min-width: 100%;
+    height: 90vh; }
+
+.scroll_icon {
+  width: 4.5rem;
+  margin: auto;
+  text-align: center;
+  padding: 2rem 0; }
+
+.road_page-caption {
+  padding: 1rem;
+  margin-bottom: 3rem; }
+  .road_page-caption-inner {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 3rem 1.2rem;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    color: #999999; }
+
+.map_section {
+  max-height: 700px; }
+
+@media (min-width: 768px) {
+  .road_page-caption-inner {
+    display: block;
+    max-width: 900px;
+    font-size: 2rem; } }
 
 .working_hours-block {
   position: relative;
@@ -1946,6 +2005,7 @@ main {
     font-size: 3rem;
     margin: 2rem auto; }
   .info_safety .info_item {
+    padding: 0;
     text-align: center;
     color: #ffffff;
     vertical-align: middle; }
@@ -1975,29 +2035,29 @@ main {
     margin: 3rem auto; }
 
 @media (min-width: 544px) {
+  .info_safety .info_item:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    width: 25%;
+    height: .1rem;
+    background-color: #ffffff; }
+  .info_safety .info_item:after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    width: 25%;
+    height: .1rem;
+    background-color: #ffffff; }
   .info_safety .caption {
     margin-bottom: 0;
     line-height: 140px;
     height: 140px;
     width: 140px; }
-    .info_safety .caption:before {
-      content: " ";
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      right: 100%;
-      width: 100%;
-      height: .1rem;
-      background-color: #ffffff; }
-    .info_safety .caption:after {
-      content: " ";
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      width: 100%;
-      height: .1rem;
-      background-color: #ffffff; }
     .info_safety .caption-outer {
       display: block;
       margin: 2rem auto; }
@@ -2007,9 +2067,9 @@ main {
       margin: 0 auto; }
   .info_safety .info_item-wrap {
     padding: 5rem auto; }
-    .info_safety .info_item-wrap :nth-child(2) .caption:after {
+    .info_safety .info_item-wrap :nth-child(2):after {
       display: none; }
-    .info_safety .info_item-wrap :nth-child(3) .caption:before {
+    .info_safety .info_item-wrap :nth-child(3):before {
       display: none; } }
 
 @media (min-width: 768px) {
@@ -2029,11 +2089,15 @@ main {
       height: 140px;
       margin: 0 auto; }
   .info_safety .info_item-wrap {
-    padding: 5rem auto; }
-    .info_safety .info_item-wrap :first-child .caption:before {
+    padding: 2rem 10rem; }
+    .info_safety .info_item-wrap :first-child:before {
       display: none; }
-    .info_safety .info_item-wrap :last-child .caption:after {
-      display: none; } }
+    .info_safety .info_item-wrap :last-child:after {
+      display: none; }
+    .info_safety .info_item-wrap :nth-child(2):after {
+      display: inline-block; }
+    .info_safety .info_item-wrap :nth-child(3):before {
+      display: inline-block; } }
 
 .main_footer {
   display: flex;

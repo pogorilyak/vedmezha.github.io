@@ -11,6 +11,7 @@
     }
 
     .info_item {
+        padding: 0;
         text-align: center;
         color: $white;
         vertical-align: middle;
@@ -56,18 +57,14 @@
 @media (min-width: $small-screen) {
     .info_safety {
 
-        .caption {
-            margin-bottom: 0;
-            line-height: 140px;
-            height: 140px;
-            width: 140px;
+        .info_item {
             &:before {
                 content: " ";
                 display: inline-block;
                 position: absolute;
-                top: 50%;
-                right: 100%;
-                width: 100%;
+                top: 70px;
+                right: 70px;
+                width: 25%;
                 height: .1rem;
                 background-color: $white;
             }
@@ -75,12 +72,20 @@
                 content: " ";
                 display: inline-block;
                 position: absolute;
-                top: 50%;
-                left: 100%;
-                width: 100%;
+                top: 70px;
+                left: 70px;
+                width: 25%;
                 height: .1rem;
                 background-color: $white;
             }
+        }
+
+        .caption {
+            margin-bottom: 0;
+            line-height: 140px;
+            height: 140px;
+            width: 140px;
+
 
             &-outer {
                 display: block;
@@ -98,17 +103,16 @@
             padding: 5rem auto;
 
             :nth-child(2) {
-                .caption {
-                    &:after {
-                        display: none;
-                    }
+
+                &:after {
+                    display: none;
                 }
+
             }
             :nth-child(3) {
-                .caption {
-                    &:before {
-                        display: none;
-                    }
+
+                &:before {
+                    display: none;
                 }
             }
         }
@@ -144,25 +148,33 @@
         }
 
         .info_item-wrap {
-            padding: 5rem auto;
+            padding: 2rem 10rem;
 
             :first-child {
-                .caption {
-                    &:before {
-                        display: none;
-                    }
+                &:before {
+                    display: none;
                 }
             }
             :last-child {
-                .caption {
-                    &:after {
-                        display: none;
-                    }
+                &:after {
+                    display: none;
                 }
+            }
+            :nth-child(2) {
+                &:after {
+                    display: inline-block;
+                 }
+            }
+
+            :nth-child(3) {
+                &:before {
+                    display: inline-block;
+                }
+             }
             }
         }
 
     }
-}
+
 
 

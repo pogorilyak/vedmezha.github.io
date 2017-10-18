@@ -111,3 +111,9 @@
     });
 
 })(jQuery);
+
+$(document).ready(function () {
+    if (!$.browser.webkit) {
+        $('.cam_view-wrap').html('<p>Sorry! Non webkit users. :(</p>');
+    }
+});
