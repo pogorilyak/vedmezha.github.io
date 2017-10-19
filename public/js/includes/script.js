@@ -120,4 +120,41 @@
             .text(slick.options.customPaging.call(this, slick, currentSlide));
     });
 
+    $('#weatherSlider').slick({
+        slide: 'li',
+        slidesToShow: 4,
+        prevArrow: '<button type="button" class="slick-prev"><span></span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span></span></button>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ],
+        dots: true,
+        dotsClass: 'slider-paging-number',
+        customPaging: function (slick) {
+            return (slick.currentSlide + 1) + '/' + slick.slideCount;
+        }
+    }).on('afterChange', function (event, slick, currentSlide) {
+        $(this).find('*[role="tablist"]')
+            .find('li')
+            .eq(0)
+            .text(slick.options.customPaging.call(this, slick, currentSlide));
+    });
+
 })(jQuery);

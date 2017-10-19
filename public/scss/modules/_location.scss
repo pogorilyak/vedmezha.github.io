@@ -118,9 +118,10 @@
   color: #12143c;
 
   .slider_item {
-    width: 25%;
     padding: 1rem 5rem 3rem;
     text-align: center;
+    border-left: .1rem solid transparent;
+    transition: border-color 2ms ease;
   }
 
   .weather_temperature {
@@ -168,5 +169,14 @@
   .felt_description {
     font-size: 1.2rem;
     margin: 0;
+  }
+}
+
+.slick-track {
+
+  .slick-active {
+    + .slick-active {
+      border-left: .1rem solid #212121;
+    }
   }
 }
