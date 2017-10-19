@@ -1,5 +1,3 @@
-@import "../utilities/colors/project_default";
-@import "../utilities/variables";
 
 .working_hours-block {
   position: relative;
@@ -8,7 +6,7 @@
     size: cover;
     position: center center;
     repeat: no-repeat;
-    image: url("../images/timetable-bg.jpg");
+    image: url("../images/timetable_background.jpg");
   };
   &:before {
     content: " ";

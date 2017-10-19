@@ -1,0 +1,26 @@
+.road_page-caption {
+  padding: 1rem;
+  margin-bottom: 3rem;
+
+  &-inner {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 3rem 1.2rem;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    color: $basic-font-color;
+  }
+}
+
+.map_section {
+  max-height: 700px;
+}
+
+@media (min-width: $medium-screen) {
+  .road_page-caption-inner {
+    display: block;
+    max-width: 900px;
+    font-size: 2rem;
+  }
+}

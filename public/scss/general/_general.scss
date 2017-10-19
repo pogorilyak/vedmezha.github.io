@@ -34,11 +34,13 @@ main {
 }
 
 .title {
+  position: relative;
   text-align: center;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3.7rem;
   font-weight: 700;
-  color: #13143c;
-  margin: 9rem auto 9rem auto;
+  color: $basic-blue;
+  margin: 0;
+  padding: 5rem 0;
   width: 100%;
 }
