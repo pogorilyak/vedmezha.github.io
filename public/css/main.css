@@ -1087,11 +1087,10 @@ main {
 .title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3.7rem;
   font-weight: 700;
   color: #20093f;
   margin: 0;
-  vertical-align: middle;
   padding: 5rem 0;
   width: 100%; }
 
@@ -1375,6 +1374,106 @@ main {
     float: right;
     margin: 0 2px; }
 
+.situation_block {
+  padding: 0;
+  background-color: #13143C; }
+  .situation_block .title {
+    color: #ffffff; }
+  .situation_block .situation_wrapper {
+    width: 100%;
+    padding: 4rem 5rem; }
+  .situation_block .situation_item {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center; }
+    .situation_block .situation_item label {
+      display: block;
+      position: relative;
+      font-size: 1.9rem;
+      color: #ffffff; }
+      .situation_block .situation_item label:hover {
+        cursor: pointer; }
+    .situation_block .situation_item input[type="radio"] {
+      visibility: hidden;
+      position: absolute; }
+      .situation_block .situation_item input[type="radio"]:checked ~ .checked_text {
+        text-decoration: underline; }
+  .situation_block .icon_situation {
+    display: block;
+    margin: 2rem auto;
+    width: 22rem; }
+    .situation_block .icon_situation.couple-icon {
+      width: 14.5rem; }
+  .situation_block .caption {
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    vertical-align: top;
+    color: #ffffff; }
+    .situation_block .caption .checked_radio {
+      position: relative;
+      display: inline-block;
+      width: 2.1rem;
+      height: 2.1rem;
+      cursor: pointer;
+      top: .5rem;
+      left: .8rem;
+      border-radius: 50%;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #bdbdbd; }
+      .situation_block .caption .checked_radio .checked_fill {
+        display: inline-block;
+        position: absolute;
+        top: .2rem;
+        left: .2rem;
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: transparent; }
+    .situation_block .caption input[type="radio"] {
+      display: none; }
+      .situation_block .caption input[type="radio"]:checked ~ .checked_radio .checked_fill {
+        background-color: #bdbdbd; }
+    .situation_block .caption label {
+      cursor: pointer; }
+
+@media (min-width: 768px) {
+  .situation_block {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .situation_block .icon_situation {
+      margin: 1rem auto 6rem auto; } }
+
+.name_form {
+  padding-bottom: 2rem; }
+  .name_form .caption {
+    display: block;
+    max-width: 50rem;
+    margin: 3rem auto;
+    padding: 2.2rem 5rem;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 500;
+    color: #999999; }
+  .name_form .name_input {
+    display: block;
+    color: #999999;
+    width: 60%;
+    margin: 2rem auto;
+    text-align: center;
+    outline: none;
+    opacity: .7;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #999999; }
+    .name_form .name_input:focus {
+      opacity: 1; }
+
 .cam_wrap {
   padding: 3rem; }
   .cam_wrap-second {
@@ -1438,7 +1537,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../images/timetable-bg.jpg"); }
+  background-image: url("../images/timetable_background.jpg"); }
   .working_hours-block:before {
     content: " ";
     display: block;
