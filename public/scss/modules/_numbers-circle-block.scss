@@ -1,11 +1,9 @@
 .counts {
-
-    .title {
-      font-size: 3rem;
-      margin: 2rem auto;
-    }
+  position: relative;
+  padding: 0 7rem 2rem 7rem;
 
     .info_item {
+      padding: 0;
       text-align: center;
       color: $black;
       vertical-align: middle;
@@ -18,13 +16,11 @@
       height: 120px;
       margin-bottom: 1.2rem;
       line-height: 120px;
-      text-transform: uppercase;
-      font-size: 2.5rem;
-      font-weight: 700;
 
       &-outer {
         display: inline-block;
-        max-width: 10rem;
+        max-width: 12rem;
+        font-size: 1.4rem;
 
       }
     }
@@ -33,6 +29,9 @@
       display: block;
       width: 120px;
       height: 120px;
+      font-size: 4rem;
+      font-weight: 500;
+      text-transform: uppercase;
       border: {
         width: 1px;
         color: $black;
@@ -67,41 +66,6 @@
         height: 140px;
         margin: 0 auto;
       }
-    }
-
-  }
-}
-
-@media (min-width: $medium-screen) {
-
-  .counts {
-
-    .title {
-      font-size: 4.5rem;
-      margin: 6rem auto;
-    }
-
-    .caption {
-      margin-bottom: 0;
-      line-height: 140px;
-      height: 140px;
-      width: 140px;
-
-      &-outer {
-        display: block;
-        margin: 2rem auto;
-      }
-
-      .circle {
-        width: 140px;
-        height: 140px;
-        margin: 0 auto;
-      }
-    }
-
-    .info_item-wrap {
-      padding: 5rem auto;
-
     }
 
   }
