@@ -16,7 +16,7 @@
 
     $(document).on('scroll', function () {
 
-        if ($(window).scrollTop() > headerHeight) {
+        if ($(window).scrollTop() > headerHeight && $(window).width() >= 768) {
             $('.header_sticky').addClass('is-visible')
         } else {
             $('.header_sticky').removeClass('is-visible')
@@ -67,6 +67,31 @@
                 closeSubLists();
                 $list.addClass('is-open');
             })
+        }
+    }
+
+    function createProgress() {
+        var $circles = document.getElementsByClassName('js-progress-circle');
+        var count = $circles.length;
+
+        function getProgressValue(item) {
+            return (item.querySelectorAll('span').length / 100 * item.dataset.progress).toFixed();
+        }
+
+        function setActive(item, index) {
+            setTimeout(function(){
+                item.querySelectorAll('span')[index].classList.add('active');
+            }, 200);
+        }
+
+        function markActiveDashes(item, count) {
+            for(var i = 0; i < count; i++) {
+                setActive(item, i);
+            }
+        }
+
+        for(var i = 0; i < count; i++) {
+            markActiveDashes($circles[i], getProgressValue($circles[i]));
         }
     }
 
@@ -157,6 +182,7 @@
             .text(slick.options.customPaging.call(this, slick, currentSlide));
     });
 
+    createProgress();
 })(jQuery);
 
 $(document).ready(function () {
