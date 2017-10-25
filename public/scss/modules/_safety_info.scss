@@ -1,6 +1,8 @@
+$circle-size: 140px;
+
+
 .info_safety {
     position: relative;
-    padding: 0 7rem 2rem 7rem;
     background: {
         image: url("../img/daniel-frank-223182.jpg");
         size: cover;
@@ -16,47 +18,37 @@
             height: 100%;
             background-color: $shadowed-bg;
         }
-    .title {
-        color: $white-title;
-    }
 
-
-    .info_item {
-        padding: 0;
-        text-align: center;
-        color: $white;
-        vertical-align: middle;
-    }
-
-    .caption {
-        position: relative;
-        display: inline-block;
-        width: 50%;
-        height: 120px;
-        margin-bottom: 1.2rem;
-        line-height: 120px;
-
-        &-outer {
-            display: inline-block;
-            max-width: 12rem;
-            font-size: 1.4rem;
-
+        .info_item {
+            position: relative;
+            padding: 0;
+            text-align: center;
+            color: $white;
+            vertical-align: middle;
         }
-    }
+
 
     .circle {
         display: block;
-        width: 120px;
-        height: 120px;
-        font-size: 4rem;
-        font-weight: 500;
+        margin: auto;
+        width: $circle-size;
+        height: $circle-size;
+        line-height: $circle-size;
         text-transform: uppercase;
+        font-size: 3rem;
+        vertical-align: middle;
         border: {
             width: 1px;
             color: $white;
             style: solid;
             radius: 50%;
         };
+
+        &-outer {
+            display: inline-block;
+            max-width: 12rem;
+            font-size: 1.4rem;
+        }
     }
 
     .btn {
@@ -71,58 +63,46 @@
 
         .info_item {
 
-            :before {
+            &:before {
                 content: "";
-                display: inline-block;
                 position: absolute;
                 top: 70px;
-                left: -70px;
-                width: 50%;
+                left: 0;
+                width: calc(50% - 70px);
                 height: .1rem;
                 background-color: $white;
             }
-            :after {
+            &:after {
                 content: "";
-                display: inline-block;
                 position: absolute;
                 top: 70px;
-                right: -70px;
-                width: 50%;
+                right: 0;
+                width: calc(50% - 70px);
                 height: .1rem;
                 background-color: $white;
             }
              &-wrap {
 
                  :first-child, :nth-child(3) {
-                     :before {
+                     &:before {
                          display: none;
                      }
                  }
                  :last-child, :nth-child(2) {
-                     :after {
+                     &:after {
                          display: none;
                      }
                  }
              }
         }
 
-        .caption {
-            margin-bottom: 0;
-            line-height: 140px;
-            height: 140px;
-            width: 140px;
-
-            &-outer {
-                display: block;
-                margin: 2rem auto;
-            }
-
             .circle {
-                width: 140px;
-                height: 140px;
+                width: $circle-size;
+                height: $circle-size;
+                line-height: $circle-size;
                 margin: 0 auto;
             }
-        }
+
 
     }
 }
@@ -133,12 +113,12 @@
         .info_item-wrap {
 
             :nth-child(2) {
-                :after {
+                &:after {
                     display: inline-block;
                 }
             }
             :nth-child(3) {
-                :before {
+                &:before {
                     display: inline-block;
                 }
             }
