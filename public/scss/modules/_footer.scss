@@ -56,23 +56,9 @@
   }
 }
 
-.borders_LR-large_screen {
-  @media (min-width: $large-screen) {
-    border: 1px solid #fff;
-    border-top: 0;
-    border-bottom: 0;
-  }
-}
-
 .footer_info {
   text-align: center;
   margin: 2rem 0 0;
-
-  &:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
 
   .info_item {
     margin: 0;
@@ -82,3 +68,4 @@
     }
   }
 }
+

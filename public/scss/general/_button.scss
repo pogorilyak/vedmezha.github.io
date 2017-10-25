@@ -28,7 +28,7 @@ $btn-orange : color('state','orange');
   cursor: pointer;
   outline: none 0;
   vertical-align: middle;
-  transition: all 350ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
   user-select: none;
   border-radius: 5px;
   //@include rem(font-size, 16px);
@@ -74,6 +74,17 @@ $btn-orange : color('state','orange');
     &:hover {
       border-color: lighten($btn-orange, 10%);
       background-color: lighten($btn-orange, 10%);
+    }
+  }
+
+  &.white {
+    color: #12133c;
+    border-color: $white;
+    background-color: $white;
+
+    &:hover {
+      background-color: transparent;
+      color: $white;
     }
   }
 
@@ -123,5 +134,11 @@ $btn-orange : color('state','orange');
 
   &.rounded {
     border-radius: 5px;
+  }
+}
+
+.btn_wrap {
+  &.centered {
+    text-align: center;
   }
 }

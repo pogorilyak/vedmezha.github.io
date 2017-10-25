@@ -28,7 +28,7 @@ var paths = {
 gulp.task('connect', function() {
     connect.server({
         root: './',
-        port: 3000,
+        port: 5000,
         livereload: true
     });
 });
