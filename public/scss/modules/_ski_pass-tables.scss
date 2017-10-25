@@ -1,0 +1,218 @@
+.public_price, .season_pass, .ski_pass_rate {
+  position: relative;
+  padding: 0 3.5rem;
+  font-size: 1.4rem;
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .btn {
+    display: block;
+    margin: 3rem auto;
+
+    &.white {
+      background-color: $white;
+      color: $basic-blue;
+      border: 0;
+    }
+  }
+  .caption {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 3% 0 ;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.season_pass {
+  background: {
+    size: cover;
+    position: center center;
+    image: url('../images/season-pass-bg.jpg');
+  };
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $shadowed-bg;
+  }
+
+  .watch-icon-small {
+    .st0 {stroke: $basic-blue;}
+    .st1 {fill: $basic-blue;}
+    .st2 {fill: $basic-blue;}
+    .st3 {stroke: $basic-blue;}
+  }
+
+  .title, .caption, td {
+    color: $white;
+  }
+
+  thead td {
+    color: $basic-blue;
+  }
+
+}
+
+.ski_pass_rate {
+  background: {
+    size: cover;
+    position: center center;
+    image: url('../images/ski-pass-rate-bg.jpeg');
+  };
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $shadowed-bg;
+  }
+
+  .title, .caption, td {
+    color: $white;
+  }
+
+}
+
+.table_wrapper {
+  overflow-x: auto;
+  margin: 0 auto;
+  position: relative;
+
+  table {
+    width: 100%;
+    min-width: 560px;
+  }
+}
+
+.watch-icon-small {
+  display: inline-block;
+  margin: auto;
+  width: 4rem;
+
+}
+
+.pass_table {
+  text-align: center;
+  border: 1px solid $table-border;
+
+  td {
+    padding: 1.3rem;
+    border: {
+      left: 1px;
+      right: 1px;
+      top: 0;
+      bottom: 0;
+      style: solid;
+      color: $table-border;
+    };
+  }
+
+  .table_head {
+    &-public {
+      background-color: $basic-blue;
+      color: $white;
+      font-weight: 600;
+    }
+
+    &-season {
+      background-color: $lighten-bg-grey;
+      color: $basic-blue;
+      font-weight: 600;
+    }
+
+    &-tribe {
+      background-color: $lighten-bg-blue;
+      color: $white;
+      font-weight: 600;
+    }
+
+  }
+
+}
+
+.info {
+
+  &_caption {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: $basic-blue;
+  }
+
+  &_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_box {
+    display: block;
+    margin-bottom: 1.2rem;
+    padding: .3rem 1rem;
+    border: 1px solid $black;
+  }
+}
+
+.track {
+
+  &_list {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+  }
+
+  &_item {
+    display: inline-block;
+    color: $white;
+
+    span {
+      display: block;
+      width: 2.5rem;
+      height: 2.5rem;
+      text-align: center;
+      line-height: 2.5rem;
+      border-radius: 50%;
+    }
+  }
+
+  &_color-green {
+    background-color: $track-green;
+  }
+  &_color-blue {
+    background-color: $track-blue;
+  }
+  &_color-red {
+    background-color: $track-red;
+  }
+  &_color-black {
+    background-color: $track-black;
+  }
+
+}
+
+
+@media (min-width: $small-screen) {
+
+  .public_price, .season_pass, .ski_pass_rate {
+
+    .title {
+      font-size: 3rem;
+    }
+  }
+
+}
+
+@media (min-width: $medium-screen) {
+
+}
