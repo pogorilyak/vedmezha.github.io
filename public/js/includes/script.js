@@ -7,20 +7,9 @@
     var $navigationLinks = $navigation.find('.js-nav_link');
     var $body = $('body');
     var $searchEl = $('.js-search_el');
-    var headerHeight = $('.js-main_header').height();
-
 
     $(document).on('click', function () {
         $searchEl.removeClass('is-open')
-    });
-
-    $(document).on('scroll', function () {
-
-        if ($(window).scrollTop() > headerHeight && $(window).width() >= 768) {
-            $('.header_sticky').addClass('is-visible')
-        } else {
-            $('.header_sticky').removeClass('is-visible')
-        }
     });
 
     btnOpenMenu.on('click', function () {

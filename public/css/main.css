@@ -1644,6 +1644,19 @@ main {
     .name_form .name_input:focus {
       opacity: 1; }
 
+.desire_block .desire_btn {
+  display: block;
+  color: #13143C;
+  background-color: #fff;
+  border: 1px solid #13143C;
+  text-align: center; }
+
+.desire_block .desire_input {
+  display: none; }
+  .desire_block .desire_input:checked + .desire_btn {
+    background-color: #13143C;
+    color: #fff; }
+
 .cam_wrap {
   padding: 3rem; }
   .cam_wrap-second {
@@ -2777,8 +2790,7 @@ main {
       margin: 0; }
 
 .footer_info {
-  text-align: center;
-  margin: 2rem 0 0; }
+  text-align: center; }
   .footer_info .info_item {
     margin: 0; }
     .footer_info .info_item:last-child {

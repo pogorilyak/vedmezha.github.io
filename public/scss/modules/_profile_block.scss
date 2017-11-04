@@ -32,3 +32,37 @@
     }
   }
 }
+
+.desire_block {
+
+  .desire_title {
+
+  }
+
+  .desire_list {
+
+  }
+
+  .desire_item {
+
+  }
+
+  .desire_btn {
+    display: block;
+    color: #13143C;
+    background-color: #fff;
+    border: 1px solid #13143C;
+    text-align: center;
+  }
+
+  .desire_input {
+    display: none;
+
+    &:checked {
+      + .desire_btn {
+        background-color: #13143C;
+        color: #fff;
+      }
+    }
+  }
+}
