@@ -1,0 +1,29 @@
+.tags_wrap {
+  padding: 2rem 3rem;
+
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag_item {
+    display: inline-block;
+    padding: .7rem 1rem;
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+    background-color: $tag-color-bg;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: $small-screen) {
+  .tags_wrap {
+    width: 70%;
+    padding: 2.5rem 6rem;
+  }
+}
