@@ -2136,25 +2136,6 @@ main {
   .practice_menu .practice_block .practice_item {
     display: none; }
 
-.header_sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
-  transform: translateY(-100%); }
-  .header_sticky.is-visible {
-    transform: none; }
-  .header_sticky .sticky_profile {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 12rem;
-    height: 12rem;
-    background-color: #13143c; }
-
 .counts {
   position: relative;
   padding: 0 7rem 2rem 7rem; }
@@ -2829,7 +2810,7 @@ main {
     transform: translateY(-0.3rem); }
 
 .tags_wrap {
-  padding: 2rem 3rem; }
+  padding: 2rem 0; }
   .tags_wrap-inner {
     display: flex;
     flex-wrap: wrap; }
@@ -2839,17 +2820,11 @@ main {
     margin-left: 1.2rem;
     margin-bottom: 1rem;
     background-color: #bdbdbd;
-    border-radius: .5rem;
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
     font-weight: 400;
     font-size: 1.4rem; }
-
-@media (min-width: 544px) {
-  .tags_wrap {
-    width: 70%;
-    padding: 2.5rem 6rem; } }
 
 .hide {
   display: none !important; }
