@@ -8,9 +8,10 @@
 
   .tag_item {
     display: inline-block;
-    padding: .7rem 1rem;
+    padding: 0 1rem;
     margin-left: 1.2rem;
     margin-bottom: 1rem;
+    line-height: 3rem;
     background-color: $tag-color-bg;
     text-transform: uppercase;
     text-align: center;
