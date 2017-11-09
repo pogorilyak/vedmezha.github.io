@@ -2825,6 +2825,34 @@ main {
     color: #ffffff;
     font-weight: 400;
     font-size: 1.4rem; }
+  .tags_wrap .close_icon {
+    position: relative;
+    top: .4rem;
+    margin-left: .3rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer; }
+    .tags_wrap .close_icon::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2rem;
+      height: .1rem;
+      background-color: #ffffff;
+      transform: rotate(45deg); }
+    .tags_wrap .close_icon::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2rem;
+      height: .1rem;
+      background-color: #ffffff;
+      transform: rotate(-45deg); }
 
 .hide {
   display: none !important; }

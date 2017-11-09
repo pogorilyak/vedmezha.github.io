@@ -18,4 +18,37 @@
     font-weight: 400;
     font-size: 1.4rem;
   }
+
+  .close_icon {
+    position: relative;
+    top: .4rem;
+    margin-left: .3rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2rem;
+      height: .1rem;
+      background-color: $white;
+      transform: rotate(45deg);
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2rem;
+      height: .1rem;
+      background-color: $white;
+      transform: rotate(-45deg);
+    }
+  }
 }
