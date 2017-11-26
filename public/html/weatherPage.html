@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Vedmezha</title>
+    <title>Горнолыжный курорт "Ведмежа", с. Поляна</title>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,10 +17,11 @@
 <body>
 <div class="main-wrapper">
     <header class="main_header js-main_header"
-            style="background-image: url('../images/main_header_background.jpg')">
+            style="background-image: url('../images/weather_background.jpg')">
         <div class="container header_container">
             <div class="site_header">
                 <div class="header_logo">
+				<a href="http://www.vedmezha.com" >
                     <svg version="1.1"
                      xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -86,10 +87,11 @@
                         "/>
                 </g>
                 </svg>
+				</a>
                 </div>
-                <ul class="header_nav">
-                    <li class="nav_item">
-                        <a href="./weatherPage.html" class="item_link">
+               <ul class="header_nav">
+                   <li class="nav_item">
+                        <a href="./webcamsPage.html" class="item_link">
                             <svg version="1.1"
                              xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -99,30 +101,62 @@
                              style="enable-background:new 0 0 43 43;"
                              xml:space="preserve">
                         <style type="text/css">
-                            .st0-2{fill:none;stroke:#FDFEFF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                            .st1-2{fill:none;stroke:#FDFEFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                            .st2-2{fill:none;stroke:#12143C;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                            .st0-6{fill:none;stroke:#FDFEFF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                            .st1-6{fill:none;stroke:#12143C;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                            .st2-6{fill:none;stroke:#FDFEFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                            .st3-6{fill:#F7F8F9;stroke:#FDFEFF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
                         </style>
-                        <g>
-                            <path class="st0-2" d="M13,13.9c1.7-2.5,4.6-4.1,7.8-4.1c5.1,0,9.2,4,9.5,9"/>
-                            <path class="st0-2" d="M23.2,23.9c0.6-2.9,3.2-5.1,6.2-5.1c3.5,0,6.4,2.9,6.4,6.4c0,3.5-2.9,6.4-6.4,6.4"/>
-                            <path class="st0-2" d="M7.8,31.6c-3.5-0.2-6.3-3.1-6.3-6.6c0-2.8,1.7-5.2,4.2-6.2"/>
-                            <path class="st0-2" d="M5.7,18.6c-0.1-0.3-0.1-0.7-0.1-1.1c0-2.5,2.1-4.6,4.6-4.6c2.5,0,4.6,2.1,4.6,4.6"/>
-                            <path class="st0-2" d="M26.5,9c0.9-1.1,2.4-1.9,4-1.9c2.8,0,5.1,2.3,5.1,5.1c0,1.9-1,3.6-2.6,4.4"/>
-                            <line class="st1-2" x1="25.9" y1="6.3" x2="23.9" y2="3.9"/>
-                            <line class="st1-2" x1="31.4" y1="4.2" x2="31.6" y2="1.4"/>
-                            <line class="st1-2" x1="36.7" y1="6.7" x2="39" y2="4.8"/>
-                            <line class="st1-2" x1="38.7" y1="12.2" x2="41.5" y2="12.5"/>
-                            <line class="st1-2" x1="36.2" y1="17.5" x2="38.1" y2="19.8"/>
-                            <line class="st2-2" x1="13.5" y1="33.1" x2="13.5" y2="39.4"/>
-                            <line class="st2-2" x1="18.3" y1="35.3" x2="18.3" y2="41.6"/>
-                            <line class="st2-2" x1="23.2" y1="33.1" x2="23.2" y2="39.4"/>
+                        <g id="webcam">
+                            <path class="st0-6" d="M36.8,16.8c0,4.8-2.2,9.1-5.7,11.9c-2.6,2.1-6,3.4-9.6,3.4c-3.7,0-7-1.3-9.6-3.4c-3.5-2.8-5.7-7.1-5.7-11.9 C6.2,8.4,13,1.5,21.5,1.5C30,1.5,36.8,8.4,36.8,16.8z"/>
+                            <path class="st0-6" d="M41.5,41.5H30.3c-1,0-1.8-0.7-2-1.6c-0.7-3.1-3.5-5.4-6.8-5.4c-3.3,0-6.1,2.3-6.8,5.4c-0.2,0.9-1,1.6-2,1.6 H1.5l10.4-12.8c2.6,2.1,6,3.4,9.6,3.4c3.7,0,7-1.3,9.6-3.4L41.5,41.5z"/>
+                            <path class="st1-6" d="M27.7,16.8c0,2-0.9,3.7-2.3,4.8c-1.1,0.9-2.4,1.4-3.9,1.4c-1.5,0-2.9-0.5-3.9-1.4c-1.4-1.1-2.3-2.9-2.3-4.8 c0-3.4,2.8-6.2,6.2-6.2C24.9,10.6,27.7,13.4,27.7,16.8z"/>
+                            <path class="st2-6" d="M30.4,16.8c0,2.8-1.3,5.3-3.3,6.9c-1.5,1.3-3.5,2-5.6,2c-2.1,0-4.1-0.7-5.6-2c-2-1.6-3.3-4.1-3.3-6.9 c0-4.9,4-8.9,8.9-8.9C26.4,7.9,30.4,11.9,30.4,16.8z"/>
+                            <path class="st0-6" d="M21.5,12.9c2.2,0,4,1.8,4,4"/>
+                            <circle class="st3-6" cx="21.5" cy="4.9" r="0.6"/>
                         </g>
                         </svg>
-                            Weather
+                            Веб-камеры
                         </a>
                     </li>
-                    <li class="nav_item">
+					<li class="nav_item">
+                        <a href="./skiPassPage.html" class="item_link">
+                            <svg version="1.1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px"
+                             y="0px"
+                             viewBox="0 0 43 43"
+                             style="enable-background:new 0 0 43 43;"
+                             xml:space="preserve">
+                        <style type="text/css">
+                            .st0-5{fill:none;stroke:#FDFEFF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                            .st1-5{fill:none;stroke:#12143C;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                        </style>
+                        <g id="ski_pass">
+                            <path class="st0-5" d="M34.5,1.5v40h-7.2c0-3.2-2.6-5.7-5.7-5.7c-3.2,0-5.7,2.6-5.7,5.7H8.5v-40h7.2c0,3.2,2.6,5.7,5.7,5.7 c3.2,0,5.7-2.6,5.7-5.7H34.5z"/>
+                            <line class="st0-5" x1="8.5" y1="11.6" x2="24" y2="11.6"/>
+                            <line class="st0-5" x1="34.5" y1="11.6" x2="29.1" y2="11.6"/>
+                            <line class="st1-5" x1="18.8" y1="30.7" x2="21.5" y2="29.1"/>
+                            <line class="st1-5" x1="24.2" y1="30.7" x2="21.5" y2="29.1"/>
+                            <line class="st1-5" x1="21.5" y1="15" x2="21.5" y2="32.6"/>
+                            <line class="st1-5" x1="18.8" y1="16.9" x2="21.5" y2="18.6"/>
+                            <line class="st1-5" x1="24.2" y1="16.9" x2="21.5" y2="18.6"/>
+                            <line class="st1-5" x1="14.2" y1="24.9" x2="16.9" y2="26.4"/>
+                            <line class="st1-5" x1="16.9" y1="29.6" x2="16.9" y2="26.4"/>
+                            <line class="st1-5" x1="29.1" y1="19.4" x2="13.9" y2="28.2"/>
+                            <line class="st1-5" x1="26.1" y1="18.1" x2="26" y2="21.2"/>
+                            <line class="st1-5" x1="28.8" y1="22.7" x2="26" y2="21.2"/>
+                            <line class="st1-5" x1="26.1" y1="29.6" x2="26.1" y2="26.4"/>
+                            <line class="st1-5" x1="28.8" y1="24.9" x2="26.1" y2="26.4"/>
+                            <line class="st1-5" x1="13.9" y1="19.4" x2="29.1" y2="28.2"/>
+                            <line class="st1-5" x1="14.2" y1="22.7" x2="17" y2="21.2"/>
+                            <line class="st1-5" x1="16.9" y1="18.1" x2="17" y2="21.2"/>
+                        </g>
+                        </svg>
+                            Ски-пасы
+                        </a>
+                    </li>
+					<li class="nav_item">
                         <a href="./slopesPage.html" class="item_link">
                             <svg version="1.1"
                              xmlns="http://www.w3.org/2000/svg"
@@ -161,10 +195,44 @@
                             <path class="st3-3" d="M28.9,13v28.3c0,0.1-0.1,0.1-0.1,0.1h-5.4c-0.1,0-0.1-0.1-0.1-0.1v-37c0-1.6,1.3-2.8,2.8-2.8l0,0 c1.6,0,2.8,1.3,2.8,2.8V13"/>
                         </g>
                         </svg>
-                            Ski pots info
+                            Прокат
                         </a>
                     </li>
                     <li class="nav_item">
+                        <a href="./weatherPage.html" class="item_link">
+                            <svg version="1.1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px"
+                             y="0px"
+                             viewBox="0 0 43 43"
+                             style="enable-background:new 0 0 43 43;"
+                             xml:space="preserve">
+                        <style type="text/css">
+                            .st0-2{fill:none;stroke:#FDFEFF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                            .st1-2{fill:none;stroke:#FDFEFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                            .st2-2{fill:none;stroke:#12143C;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                        </style>
+                        <g>
+                            <path class="st0-2" d="M13,13.9c1.7-2.5,4.6-4.1,7.8-4.1c5.1,0,9.2,4,9.5,9"/>
+                            <path class="st0-2" d="M23.2,23.9c0.6-2.9,3.2-5.1,6.2-5.1c3.5,0,6.4,2.9,6.4,6.4c0,3.5-2.9,6.4-6.4,6.4"/>
+                            <path class="st0-2" d="M7.8,31.6c-3.5-0.2-6.3-3.1-6.3-6.6c0-2.8,1.7-5.2,4.2-6.2"/>
+                            <path class="st0-2" d="M5.7,18.6c-0.1-0.3-0.1-0.7-0.1-1.1c0-2.5,2.1-4.6,4.6-4.6c2.5,0,4.6,2.1,4.6,4.6"/>
+                            <path class="st0-2" d="M26.5,9c0.9-1.1,2.4-1.9,4-1.9c2.8,0,5.1,2.3,5.1,5.1c0,1.9-1,3.6-2.6,4.4"/>
+                            <line class="st1-2" x1="25.9" y1="6.3" x2="23.9" y2="3.9"/>
+                            <line class="st1-2" x1="31.4" y1="4.2" x2="31.6" y2="1.4"/>
+                            <line class="st1-2" x1="36.7" y1="6.7" x2="39" y2="4.8"/>
+                            <line class="st1-2" x1="38.7" y1="12.2" x2="41.5" y2="12.5"/>
+                            <line class="st1-2" x1="36.2" y1="17.5" x2="38.1" y2="19.8"/>
+                            <line class="st2-2" x1="13.5" y1="33.1" x2="13.5" y2="39.4"/>
+                            <line class="st2-2" x1="18.3" y1="35.3" x2="18.3" y2="41.6"/>
+                            <line class="st2-2" x1="23.2" y1="33.1" x2="23.2" y2="39.4"/>
+                        </g>
+                        </svg>
+                            Погода
+                        </a>
+                    </li>
+					<li class="nav_item">
                         <a href="./roadConditionsMap.html" class="item_link">
                             <svg version="1.1"
                              xmlns="http://www.w3.org/2000/svg"
@@ -186,76 +254,10 @@
                             <path class="st1-4" d="M22.4,41.5h-1.8c-0.4,0-0.7-0.3-0.7-0.7l0.3-11.6c0-0.4,0.3-0.7,0.7-0.7h1.3c0.4,0,0.7,0.3,0.7,0.7l0.3,11.6  C23.1,41.2,22.8,41.5,22.4,41.5z"/>
                         </g>
                         </svg>
-                            Roads conditions
+                            Как добраться
                         </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="./skiPassPage.html" class="item_link">
-                            <svg version="1.1"
-                             xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink"
-                             x="0px"
-                             y="0px"
-                             viewBox="0 0 43 43"
-                             style="enable-background:new 0 0 43 43;"
-                             xml:space="preserve">
-                        <style type="text/css">
-                            .st0-5{fill:none;stroke:#FDFEFF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                            .st1-5{fill:none;stroke:#12143C;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                        </style>
-                        <g id="ski_pass">
-                            <path class="st0-5" d="M34.5,1.5v40h-7.2c0-3.2-2.6-5.7-5.7-5.7c-3.2,0-5.7,2.6-5.7,5.7H8.5v-40h7.2c0,3.2,2.6,5.7,5.7,5.7 c3.2,0,5.7-2.6,5.7-5.7H34.5z"/>
-                            <line class="st0-5" x1="8.5" y1="11.6" x2="24" y2="11.6"/>
-                            <line class="st0-5" x1="34.5" y1="11.6" x2="29.1" y2="11.6"/>
-                            <line class="st1-5" x1="18.8" y1="30.7" x2="21.5" y2="29.1"/>
-                            <line class="st1-5" x1="24.2" y1="30.7" x2="21.5" y2="29.1"/>
-                            <line class="st1-5" x1="21.5" y1="15" x2="21.5" y2="32.6"/>
-                            <line class="st1-5" x1="18.8" y1="16.9" x2="21.5" y2="18.6"/>
-                            <line class="st1-5" x1="24.2" y1="16.9" x2="21.5" y2="18.6"/>
-                            <line class="st1-5" x1="14.2" y1="24.9" x2="16.9" y2="26.4"/>
-                            <line class="st1-5" x1="16.9" y1="29.6" x2="16.9" y2="26.4"/>
-                            <line class="st1-5" x1="29.1" y1="19.4" x2="13.9" y2="28.2"/>
-                            <line class="st1-5" x1="26.1" y1="18.1" x2="26" y2="21.2"/>
-                            <line class="st1-5" x1="28.8" y1="22.7" x2="26" y2="21.2"/>
-                            <line class="st1-5" x1="26.1" y1="29.6" x2="26.1" y2="26.4"/>
-                            <line class="st1-5" x1="28.8" y1="24.9" x2="26.1" y2="26.4"/>
-                            <line class="st1-5" x1="13.9" y1="19.4" x2="29.1" y2="28.2"/>
-                            <line class="st1-5" x1="14.2" y1="22.7" x2="17" y2="21.2"/>
-                            <line class="st1-5" x1="16.9" y1="18.1" x2="17" y2="21.2"/>
-                        </g>
-                        </svg>
-                            Ski pass
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="./webcamsPage.html" class="item_link">
-                            <svg version="1.1"
-                             xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink"
-                             x="0px"
-                             y="0px"
-                             viewBox="0 0 43 43"
-                             style="enable-background:new 0 0 43 43;"
-                             xml:space="preserve">
-                        <style type="text/css">
-                            .st0-6{fill:none;stroke:#FDFEFF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                            .st1-6{fill:none;stroke:#12143C;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                            .st2-6{fill:none;stroke:#FDFEFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                            .st3-6{fill:#F7F8F9;stroke:#FDFEFF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                        </style>
-                        <g id="webcam">
-                            <path class="st0-6" d="M36.8,16.8c0,4.8-2.2,9.1-5.7,11.9c-2.6,2.1-6,3.4-9.6,3.4c-3.7,0-7-1.3-9.6-3.4c-3.5-2.8-5.7-7.1-5.7-11.9 C6.2,8.4,13,1.5,21.5,1.5C30,1.5,36.8,8.4,36.8,16.8z"/>
-                            <path class="st0-6" d="M41.5,41.5H30.3c-1,0-1.8-0.7-2-1.6c-0.7-3.1-3.5-5.4-6.8-5.4c-3.3,0-6.1,2.3-6.8,5.4c-0.2,0.9-1,1.6-2,1.6 H1.5l10.4-12.8c2.6,2.1,6,3.4,9.6,3.4c3.7,0,7-1.3,9.6-3.4L41.5,41.5z"/>
-                            <path class="st1-6" d="M27.7,16.8c0,2-0.9,3.7-2.3,4.8c-1.1,0.9-2.4,1.4-3.9,1.4c-1.5,0-2.9-0.5-3.9-1.4c-1.4-1.1-2.3-2.9-2.3-4.8 c0-3.4,2.8-6.2,6.2-6.2C24.9,10.6,27.7,13.4,27.7,16.8z"/>
-                            <path class="st2-6" d="M30.4,16.8c0,2.8-1.3,5.3-3.3,6.9c-1.5,1.3-3.5,2-5.6,2c-2.1,0-4.1-0.7-5.6-2c-2-1.6-3.3-4.1-3.3-6.9 c0-4.9,4-8.9,8.9-8.9C26.4,7.9,30.4,11.9,30.4,16.8z"/>
-                            <path class="st0-6" d="M21.5,12.9c2.2,0,4,1.8,4,4"/>
-                            <circle class="st3-6" cx="21.5" cy="4.9" r="0.6"/>
-                        </g>
-                        </svg>
-                            Webcam
-                        </a>
-                    </li>
-                </ul>
+                 </ul>
             </div>
             <ul class="header_navigator">
                 <li class="navigator_item search_el js-search_el hide_on_mobile">
@@ -355,7 +357,7 @@
                                       rx="1"></rect>
                             </g>
                         </svg>
-                        <span class="hide_on_mobile">MENU</span>
+                        <span class="hide_on_mobile">Меню</span>
                     </div>
                 </li>
             </ul>
@@ -447,7 +449,7 @@
                             <path d="M11.414 10l7.8 7.8.708.707-1.415 1.415-.707-.708-7.8-7.8-7.8 7.8-.707.708-1.415-1.415.708-.707 7.8-7.8L.793 2.207.086 1.5 1.5.086l.707.707L10 8.586 17.793.793 18.5.086 19.914 1.5l-.707.707L11.414 10z">
                             </path>
                         </svg>
-                        <span class="hide_on_mobile">MENU</span>
+                        <span class="hide_on_mobile">Меню</span>
                     </li>
                 </ul>
                 <nav class="site_navigation">
@@ -529,7 +531,7 @@
                                     <line class="st2_1" x1="23.2" y1="33.1" x2="23.2" y2="39.4"/>
                                 </g>
                             </svg>
-                                WEATHER
+                                Погода
                             </li>
                             <li class="menu_item">
                                 <svg version="1.1"
@@ -569,7 +571,7 @@
                                 <path class="st3_2" d="M28.9,13v28.3c0,0.1-0.1,0.1-0.1,0.1h-5.4c-0.1,0-0.1-0.1-0.1-0.1v-37c0-1.6,1.3-2.8,2.8-2.8l0,0 c1.6,0,2.8,1.3,2.8,2.8V13"/>
                             </g>
                             </svg>
-                                SKI POTS INFO
+                                Прокат
                             </li>
                             <li class="menu_item">
                                 <svg version="1.1"
@@ -592,7 +594,7 @@
                                 <path class="st1_3" d="M22.4,41.5h-1.8c-0.4,0-0.7-0.3-0.7-0.7l0.3-11.6c0-0.4,0.3-0.7,0.7-0.7h1.3c0.4,0,0.7,0.3,0.7,0.7l0.3,11.6 C23.1,41.2,22.8,41.5,22.4,41.5z"/>
                             </g>
                             </svg>
-                                ROAD CONDITIONS
+                                Как добраться
                             </li>
                             <li class="menu_item">
                                 <svg version="1.1"
@@ -628,7 +630,7 @@
                                 <line class="st1_4" x1="16.9" y1="18.1" x2="17" y2="21.2"/>
                             </g>
                             </svg>
-                                SKI PASS
+                                Ски-пасы
                             </li>
                             <li class="menu_item">
                                 <svg version="1.1"
@@ -654,7 +656,7 @@
                                 <circle class="st3_5" cx="21.5" cy="4.9" r="0.6"/>
                             </g>
                             </svg>
-                                WEBCAM
+                                Веб-камеры
                             </li>
                         </ul>
                         <div class="practice_block">
@@ -665,8 +667,8 @@
             </div>
             <div class="header_info">
                 <h1 class="header_title">Vedmezha</h1>
-                <p class="header_subtitle">5 good reason to shoose it</p>
-                <button class="btn blue btn-read_more">Read more</button>
+                <p class="header_subtitle">Погода на склоне</p>
+                <!-- <button class="btn blue btn-read_more">Read more</button> -->
             </div>
             <div class="scrolldown_block hide_on_mobile">
                 <svg version="1.1"
@@ -866,19 +868,7 @@
                                 <line class="st9_mt" x1="708.5" y1="283.8" x2="709.2" y2="283.1"/>
                                 <polyline class="st10_mt" points="713.4,278.9 749.5,242.8 862.1,242.8 	"/>
                                 <line class="st9_mt" x1="865.1" y1="242.8" x2="866.1" y2="242.8"/>
-                                <g>
-                                    <path class="st11_mt" d="M771,232.2h-2.4v-15.4c0-1.3,0-2.5,0.1-3.6c-0.2,0.2-0.4,0.4-0.7,0.7c-0.3,0.2-1.4,1.2-3.5,2.9l-1.3-1.7
-                                        l5.7-4.4h2.1V232.2z"/>
-                                    <path class="st11_mt" d="M794.5,227.2h-3.2v5H789v-5h-10.5V225l10.3-14.7h2.6V225h3.2V227.2z M789,225v-7.2c0-1.4,0-3,0.1-4.8H789
-                                        c-0.5,0.9-0.9,1.7-1.3,2.4l-6.8,9.6H789z"/>
-                                    <path class="st11_mt" d="M811.9,227.2h-3.2v5h-2.4v-5h-10.5V225l10.3-14.7h2.6V225h3.2V227.2z M806.3,225v-7.2c0-1.4,0-3,0.1-4.8
-                                        h-0.1c-0.5,0.9-0.9,1.7-1.3,2.4l-6.8,9.6H806.3z"/>
-                                    <path class="st11_mt" d="M816.7,232.2l9-19.4h-11.8v-2.3h14.4v2l-8.9,19.7H816.7z"/>
-                                    <path class="st11_mt" d="M861.1,232.2v-10.6c0-1.3-0.3-2.3-0.8-2.9c-0.6-0.6-1.4-1-2.6-1c-1.5,0-2.7,0.4-3.4,1.3
-                                        c-0.7,0.9-1.1,2.2-1.1,4.1v9.1h-2.5v-10.6c0-1.3-0.3-2.3-0.8-2.9c-0.6-0.6-1.4-1-2.6-1c-1.5,0-2.7,0.5-3.4,1.4
-                                        c-0.7,0.9-1.1,2.4-1.1,4.5v8.5h-2.5v-16.2h2l0.4,2.2h0.1c0.5-0.8,1.1-1.4,2-1.9c0.8-0.4,1.8-0.7,2.8-0.7c2.5,0,4.2,0.9,5,2.8h0.1
-                                        c0.5-0.8,1.2-1.5,2.1-2c0.9-0.5,2-0.7,3.1-0.7c1.8,0,3.2,0.5,4.1,1.4c0.9,0.9,1.4,2.5,1.4,4.5v10.6H861.1z"/>
-                                </g>
+                                    <text fill="#fff">327 m</text>
                                 <line class="st9_mt" x1="409" y1="79.6" x2="408.3" y2="78.9"/>
                                 <polyline class="st12_mt" points="404.1,74.7 368,38.6 247.7,38.6 	"/>
                                 <line class="st9_mt" x1="244.7" y1="38.6" x2="243.7" y2="38.6"/>
@@ -910,35 +900,35 @@
                             </g>
                             </svg>
                        </div>
-                       <div class="location_info border_L-medium_screen">
-                           <div class="location_switcher">
+                      <div class="location_info border_L-medium_screen">
+                          <!-- <div class="location_switcher">
                                <span class="switcher_label">STATION</span>
                                <label>
                                    <input type="checkbox" class="switcher_input" id="locationSwitcher">
                                    <span></span>
                                </label>
                                <span class="switcher_label">ALTITUDE</span>
-                           </div>
+                           </div>-->
                            <ul class="location_list">
                                 <li class="list_item">
-                                    <h4>Snow Base </h4>
-                                    <p>17 cm</p>
+                                    <h4>Слой снега</h4>
+                                    <p>60 cm</p>
                                 </li>
                                <li class="list_item">
-                                   <h4>Snow Quality </h4>
-                                   <p>Douce</p>
+                                   <h4>Качество снега</h4>
+                                   <p>Свежый</p>
                                </li>
-                               <li class="list_item">
-                                   <h4>Last Snowfall </h4>
-                                   <p>16/12/2017 | 4:00 | 11cm</p>
+                              <!-- <li class="list_item">
+                                   <h4>останній снігопад</h4>
+                                   <p>00/00/2017 | :00 | 0cm</p>
                                </li>
-                               <li class="list_item">
-                                   <h4>Rain/Snow Limmit  </h4>
+                              <li class="list_item">
+                                   <h4>Rain/Snow Limmit/h4>
                                    <p>2300 mm</p>
                                </li>
                                <li class="list_item">
-                                   <h4>Humidity Level  </h4>
-                                   <p>47%</p>
+                                   <h4>Вологість повітря</h4>
+                                   <p>47%</p>-->
                                </li>
                            </ul>
                        </div>
@@ -1334,9 +1324,9 @@
                             </svg>
                         </a>
                         <div class="footer_address">
-                            <p>13 Name Avenue</p>
-                            <p>City, 1017</p>
-                            <p>T:212-338-5100 | F:646-307-7100</p>
+                            <p>Украина. Закарпатская обл.</p>
+                            <p>с. Поляна, ул. Духновича, 209</p>
+                            <p>GPS: 48.646562, 22.970613</p>
                         </div>
                     </div>
                 </div>
@@ -1371,7 +1361,7 @@
                             </a>
                         </li>
                         <li class="social_item">
-                            <a href="javascript:;" class="social_link">
+                            <a href="https://www.facebook.com/vedmezha.ua" class="social_link">
                                 <svg version="1.1"
                                      xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1433,10 +1423,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col m-6 l-4 footer_info">
-                    <p class="info_item">&#169;2017 Vedmezha All Rights Reserved.</p>
-                    <p class="info_item">Use of this website signifles your agreement to the Terms of Use and Privacy Policy</p>
-                    <p class="info_item">Powered by NAME OF DIGITAL AGENCY</p>
+                <div class="col m-12 l-4 footer_info">
+                    <p class="info_item">&#169;2017 Vedmezha Все права защищены.</p>
+                    <p class="info_item">Использование материалов сайта возможно только с согласия ООО "Ведмежа"</p>
                 </div>
             </div>
         </div>

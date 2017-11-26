@@ -171,6 +171,23 @@
             .text(slick.options.customPaging.call(this, slick, currentSlide));
     });
 
+    $('.eventSlider').slick({
+        slide: 'li',
+        slidesToShow: 1,
+        prevArrow: '<button type="button" class="slick-prev"><span></span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span></span></button>',
+        dots: true,
+        dotsClass: 'slider-paging-number',
+        customPaging: function (slick) {
+            return (slick.currentSlide + 1) + '/' + slick.slideCount;
+        }
+    }).on('afterChange', function (event, slick, currentSlide) {
+        $(this).find('*[role="tablist"]')
+            .find('li')
+            .eq(0)
+            .text(slick.options.customPaging.call(this, slick, currentSlide));
+    });
+
     createProgress();
 })(jQuery);
 

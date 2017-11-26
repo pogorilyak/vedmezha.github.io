@@ -83,6 +83,16 @@
         background-color: #ff9800; }
   .btn.rounded {
     border-radius: 5px; }
+  .btn-circle {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 50%; }
 
 .btn_wrap.centered {
   text-align: center; }
@@ -1896,6 +1906,9 @@ main {
       position: fixed;
       right: 3.4rem;
       z-index: 10; } }
+  @media (min-width: 768px) {
+    .header_navigator {
+      display: none !important; } }
   .header_navigator .navigator_item {
     display: flex;
     align-items: center;
@@ -2143,22 +2156,27 @@ main {
     padding: 0;
     text-align: center;
     color: #000000;
-    vertical-align: middle; }
+    margin-bottom: 30px; }
+    .counts .info_item-wrap {
+      display: flex;
+      flex-wrap: wrap; }
   .counts .caption {
+    display: block;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
-    display: inline-block;
-    width: 50%;
     height: 120px;
     margin-bottom: 1.2rem;
     line-height: 120px; }
     .counts .caption-outer {
-      max-width: 12rem;
+      display: block;
       font-size: 1.4rem; }
   .counts .circle {
     display: block;
     width: 120px;
     height: 120px;
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 500;
     text-transform: uppercase;
     border-width: 1px;
@@ -2252,6 +2270,96 @@ main {
       border-radius: 50%;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13); }
 
+.logo_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  background-color: #13143c; }
+
+.mountain_block {
+  text-align: center; }
+  .mountain_block .mountain-title {
+    font-size: 3rem;
+    margin: 4rem 0 2.4rem; }
+  .mountain_block .mountain-description {
+    font-size: 1.8rem;
+    color: gray;
+    margin-bottom: 10rem; }
+    @media (min-width: 768px) {
+      .mountain_block .mountain-description {
+        padding: 0 6rem; } }
+
+.mountain_info {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; }
+  .mountain_info .info_line {
+    display: block;
+    margin: 1rem auto;
+    height: 3.5rem;
+    width: .1rem;
+    background-color: #13143c; }
+  .mountain_info .info_item {
+    width: 100%; }
+    @media (min-width: 498px) {
+      .mountain_info .info_item {
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .mountain_info .info_item {
+        width: 25%; } }
+
+.event_action-block {
+  padding: 6rem 0 7rem;
+  text-align: center; }
+  .event_action-block .btn {
+    margin: 30px;
+    border: none;
+    padding: 1.2rem 2.4rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+
+.sliders-wrap {
+  position: relative;
+  margin-top: 70px; }
+  .sliders-wrap .slider {
+    padding-bottom: 40px; }
+    @media (min-width: 992px) {
+      .sliders-wrap .slider {
+        padding-bottom: 60px; } }
+    .sliders-wrap .slider .slider-paging-number,
+    .sliders-wrap .slider .slick-prev,
+    .sliders-wrap .slider .slick-next {
+      bottom: 0; }
+  .sliders-wrap .btn-circle {
+    position: absolute;
+    top: -22px;
+    right: 30px;
+    z-index: 2;
+    background-color: #fff; }
+  @media (max-width: 992px) {
+    .sliders-wrap .desktop-slider {
+      display: none !important; } }
+  @media (min-width: 993px) {
+    .sliders-wrap .mobile-slider {
+      display: none !important; } }
+  .sliders-wrap .sub-item + .sub-item {
+    margin-top: 12px; }
+  .sliders-wrap .mobile-slider .slider_item,
+  .sliders-wrap .desktop-slider .main-item {
+    position: relative; }
+    .sliders-wrap .mobile-slider .slider_item .btn-like,
+    .sliders-wrap .desktop-slider .main-item .btn-like {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 2;
+      background-color: transparent;
+      border: none;
+      padding: 10px; }
+  .sliders-wrap .mobile-slider .slider_item .btn-like {
+    right: auto;
+    left: 10px; }
+
 .info_safety {
   position: relative;
   background-image: url("../img/daniel-frank-223182.jpg");
@@ -2271,15 +2379,15 @@ main {
     padding: 0;
     text-align: center;
     color: #ffffff;
-    vertical-align: middle; }
+    margin-bottom: 30px; }
   .info_safety .circle {
     display: block;
-    margin: auto;
+    margin: auto auto 20px;
     width: 140px;
     height: 140px;
     line-height: 140px;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.4rem;
     vertical-align: middle;
     border-width: 1px;
     border-color: #ffffff;
@@ -2317,8 +2425,7 @@ main {
   .info_safety .circle {
     width: 140px;
     height: 140px;
-    line-height: 140px;
-    margin: 0 auto; } }
+    line-height: 140px; } }
 
 @media (min-width: 992px) {
   .info_safety .info_item-wrap :nth-child(2):after {
@@ -2764,7 +2871,8 @@ main {
 
 .footer_address-wrap {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .footer_address-wrap .footer_address {
     margin-left: 1rem; }
     .footer_address-wrap .footer_address p {

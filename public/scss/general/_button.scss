@@ -135,6 +135,18 @@ $btn-orange : color('state','orange');
   &.rounded {
     border-radius: 5px;
   }
+
+  &-circle {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+  }
 }
 
 .btn_wrap {

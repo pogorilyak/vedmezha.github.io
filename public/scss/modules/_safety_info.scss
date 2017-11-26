@@ -24,18 +24,18 @@ $circle-size: 140px;
             padding: 0;
             text-align: center;
             color: $white;
-            vertical-align: middle;
+            margin-bottom: 30px;
         }
 
 
     .circle {
         display: block;
-        margin: auto;
+        margin: auto auto 20px;
         width: $circle-size;
         height: $circle-size;
         line-height: $circle-size;
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 2.4rem;
         vertical-align: middle;
         border: {
             width: 1px;
@@ -100,7 +100,6 @@ $circle-size: 140px;
                 width: $circle-size;
                 height: $circle-size;
                 line-height: $circle-size;
-                margin: 0 auto;
             }
 
 
