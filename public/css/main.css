@@ -2924,15 +2924,44 @@ main {
     flex-wrap: wrap; }
   .tags_wrap .tag_item {
     display: inline-block;
-    padding: .7rem 1rem;
+    padding: 0 1rem;
     margin-left: 1.2rem;
     margin-bottom: 1rem;
+    line-height: 3rem;
     background-color: #bdbdbd;
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
     font-weight: 400;
     font-size: 1.4rem; }
+  .tags_wrap .close_icon {
+    position: relative;
+    top: .4rem;
+    margin-left: .3rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer; }
+    .tags_wrap .close_icon::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2rem;
+      height: .1rem;
+      background-color: #ffffff;
+      transform: rotate(45deg); }
+    .tags_wrap .close_icon::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2rem;
+      height: .1rem;
+      background-color: #ffffff;
+      transform: rotate(-45deg); }
 
 .hide {
   display: none !important; }
