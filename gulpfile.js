@@ -28,7 +28,7 @@ var paths = {
 gulp.task('connect', function() {
     connect.server({
         root: './',
-        port: 5000,
+        port: 5555,
         livereload: true
     });
 });
@@ -73,7 +73,7 @@ gulp.task('js', function () {
 gulp.task('watch', function () {
     gulp.watch(paths.html, ['html']);
     gulp.watch(paths.scss, ['scss']);
-    // gulp.watch(paths.css, ['css']);
+    gulp.watch(paths.css, ['css']);
     // gulp.watch(paths.js, ['js']);
 });
 
